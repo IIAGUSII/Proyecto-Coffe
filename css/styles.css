@@ -1,3 +1,9 @@
 *{
-    background: green;
+    background: wheat;
+}
+
+nav{
+    
+    display: flex;
+    
 }
