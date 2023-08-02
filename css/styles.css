@@ -1,9 +1,48 @@
-*{
-    background: wheat;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-nav{
-    
-    display: flex;
-    
+nav {
+  background-color: #e3caa5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img_menu {
+  width: 40px;
+  height: 30px;
+  margin-left: 5%;
+}
+
+.img_login {
+  width: 30px;
+  height: 40px;
+}
+
+.img_shopcart {
+  width: 40px;
+  height: 40px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.banner {
+  background-image: url(../assets/img/backbanner.jpg);
+  /* background-color: rgba(0, 0, 0, 0.5);
+  opacity: 50%; */
+  height: 205px;
+}
+
+.our_products {
+  background-image: url(../assets/img/backcompraone.jpg);
+  height: 325px;
+}
+
+.opinions {
+  background-image: url(../assets/img/backopiniones.jpg);
+  height: 456px;
 }
