@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #201520;
+}
 
 nav {
   background-color: #e3caa5;
@@ -34,45 +37,257 @@ nav ul li {
   background-image: url(../assets/img/backbanner.jpg);
   /* background-color: rgba(0, 0, 0, 0.5);
   opacity: 50%; */
+  width: 350px;
   height: 205px;
 }
 
+.product_show {
+  background-color: #201520;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  width: 90%;
+  margin: 0 auto;
+  gap: 2em;
+}
+
 .our_products {
-  background-image: url(../assets/img/backcompraone.jpg);
-  height: 325px;
   display: flex;
   flex-wrap: wrap;
+  align-content: space-around;
   justify-content: space-around;
+  margin-top: 10px;
+  row-gap: 1.5em;
+  
 }
 
-.our_products img {
-  width: 127px;
-  height: 95px;
-  border-radius: 20px;
+.product_show h2{
+color: white;
+font-family: "Playfair Display", serif;
+text-align: center;
+
 }
 
-.product_one {
+.productsh2 {
   color: white;
-  display: flex;
   text-align: center;
-  flex-direction: column;
-}
-
-.product_one button {
-  border-radius: 20px;
-  width: 127px;
-  height: 25px;
-  background-color: #e3caa5;
-  color: white;
-  margin-top: 8px;
-}
-
-.product_one p {
-  font-size: 16px;
-  font-weight: 86px;
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  margin-top: 20px;
 }
 
 .opinions {
+  height: 456px;
+}
+
+.product_one {
+  display: flex;
+  width: 126px;
+  height: 193px;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #434343);
+  background: linear-gradient(to right, #000000, #434343);
+  border-radius: 20px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+.product_one img {
+  width: 108px;
+  height: 104px;
+  display: flex;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.product_one p {
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-weight: bold;
+  width: 85px;
+  height: 29px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.product_two {
+  display: flex;
+  width: 126px;
+  height: 193px;
+  background: #434343; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  border-radius: 20px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+.product_two img {
+  width: 108px;
+  height: 104px;
+  display: flex;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.product_two p {
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-weight: bold;
+  width: 85px;
+  height: 29px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.product_three {
+  display: flex;
+  width: 126px;
+  height: 193px;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #434343);
+  background: linear-gradient(to right, #000000, #434343);
+  border-radius: 20px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+.product_three p {
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-weight: bold;
+  width: 85px;
+  height: 29px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.product_three img {
+  width: 108px;
+  height: 104px;
+  display: flex;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.product_four {
+  display: flex;
+  width: 126px;
+  height: 193px;
+  background: #434343; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  border-radius: 20px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+.product_four p {
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-weight: bold;
+  width: 85px;
+  height: 29px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.product_four img {
+  width: 108px;
+  height: 104px;
+  display: flex;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.rectangle {
+  width: 91px;
+  height: 19.841px;
+  background: rgba(217, 217, 217, 0.25);
+
+  border-radius: 32px;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.precio p {
+  color: #e3caa5;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 21px;
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  margin-right: 5px;
+  width: 34px;
+  height: 12px;
+  margin-bottom: 10px;
+}
+
+.boton-circulo {
+  width: 25px;
+  height: 25px;
+  background-color: #e3caa5;
+  border-radius: 50%; /* Hace que el botón sea un círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
+.boton-circulo:hover {
+  background-color: #e3caa5; /* Cambia el color al pasar el ratón */
+}
+
+.rectangle img {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  margin-bottom: 10px;
+  margin-right: 3px;
+}
+
+* .opinions {
   background-color: #201520;
   color: rgb(255, 255, 255);
 }

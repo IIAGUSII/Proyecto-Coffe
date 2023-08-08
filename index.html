@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
+<link
+
+
       rel="icon"
       type="image/png"
       sizes="32x32"
@@ -19,12 +26,10 @@
       <ul>
         <li></li>
       </ul>
-
       <img src="./assets/img/logoSpresso.png" />
       <ul>
         <li></li>
       </ul>
-
       <img class="img_login" src="./assets/img/login.png" alt="" />
       <ul>
         <li id="a"></li>
@@ -34,64 +39,119 @@
         <li></li>
       </ul>
     </nav>
-
     <main>
       <section class="banner">
         <h1>CODESPRESSO</h1>
         <h2>Los mejores granos de café se encuentran aquí</h2>
       </section>
-
-      <section class="our_products">
-        <h2>NUESTROS PRODUCTOS:</h2>
-        <div class="product_one">
-          <img src="./assets/img/cafeterafrancesa.jpg" alt="" />
-          <button><p>COMPRAR</p></button>
+  
+        <section class="product_show">
+          
+          <h2>Nuestros Productos:</h2>
+      <div class="our_products">
+    
+         <div class="product_one">
+            <img src="./assets/img/cafeterafrancesa.jpg" alt="">
+            <p>Cafetera Francesa</p>
+            <div class="rectangle">
+              <button class="boton-circulo" onclick="agregarAlCarrito()">
+                <span>+</span>
+              </button>
+              <div class="precio">
+                <p>19.999</p>
+              </div>
+              <img class="precioimage" src="./assets/img/usd-circle 7.svg" alt="">
+            </div>
         </div>
-        <img src="./assets/img/cafeethiopia.jpg" alt="" />
-        <img src="./assets/img/affogato 2.jpg" alt="" />
-        <img src="./assets/img/tazavidrio 2.jpg" alt="" />
-      </section>
-
-      <section class="opinions">
-        <h2>OPINIONES:</h2>
-        <div class="opinion_one">
-          <img src="./assets/img/señorito.jpg" alt="" />
-          <div class="text_opinion">
-            <h3>
-              "¡Un gran café Affogato! RECOMIENDO: Tomar un Affogato junto a una
-              porción de la torta Brownie"
-            </h3>
-            <p>
-              El café tiene un lindo ambiente, muy cálido; las flores tienen
-              lindo olor y está muy limpio. ¡Recomiendo CODESPRESSO!
-            </p>
+        <div class="product_two">
+          <img src="./assets/img/cafeethiopia.jpg" alt="">
+          <p>Cafetera Francesa</p>
+          <div class="rectangle">
+            <button class="boton-circulo" onclick="agregarAlCarrito()">
+              <span>+</span>
+            </button>
+            <div class="precio">
+              <p>19.999</p>
+            </div>
+            <img class="precioimage" src="./assets/img/usd-circle 7.svg" alt="">
           </div>
-        </div>
-        <div class="opinion_two">
-          <img src="./assets/img/señorita.jpg" alt="" />
-          <div class="text_two">
-            <h3>
-              “¡Es un café muy estético! RECOMIENDO: Tomar un Latte Art junto a
-              sus medialunas de manteca, que son muy ricas”.
-            </h3>
-            <p>
-              Las medialunas eran muy ricas y dulces, el Latte vino con crema
-              extra muy deliciosa. ¡Totalmente recomendable!
-            </p>
+      </div>
+      <div class="product_three">
+        <img src="./assets/img/affogato.jpg" alt="">
+        <p>Cafetera Francesa</p>
+        <div class="rectangle">
+          <button class="boton-circulo" onclick="agregarAlCarrito()">
+            <span>+</span>
+          </button>
+          <div class="precio">
+            <p>19.999</p>
           </div>
+          <img class="precioimage" src="./assets/img/usd-circle 7.svg" alt="">
         </div>
-      </section>
+    </div>
+    <div class="product_four">
+      <img src="./assets/img/tazavidrio.jpg" alt="">
+      <p>Cafetera Francesa</p>
+      <div class="rectangle">
+        <button class="boton-circulo" onclick="agregarAlCarrito()">
+          <span>+</span>
+        </button>
+        <div class="precio">
+          <p>19.999</p>
+        </div>
+        <img class="precioimage" src="./assets/img/usd-circle 7.svg" alt="">
+      </div>
+  </div>
+  </div>
 
-      <footer>
-        <img src="./assets/img/logoSpresso.png" alt="" />
-        <div class="iconos_footer">
-          <img src="./assets/img/linkedin.png" alt="" />
-          <img src="/assets/img/instagram.png" alt="" />
-        </div>
-        <div class="derechos">
-          <p>©2023 CODESPRESSO</p>
-        </div>
-      </footer>
+
+
+
+
+
+      
+    
+  <section class="opinions">
+    <h2>OPINIONES:</h2>
+    <div class="opinion_one">
+      <img src="./assets/img/señorito.jpg" alt="" />
+      <div class="text_opinion">
+        <h3>
+          "¡Un gran café Affogato! RECOMIENDO: Tomar un Affogato junto a una
+          porción de la torta Brownie"
+        </h3>
+        <p>
+          El café tiene un lindo ambiente, muy cálido; las flores tienen
+          lindo olor y está muy limpio. ¡Recomiendo CODESPRESSO!
+        </p>
+      </div>
+    </div>
+    <div class="opinion_two">
+      <img src="./assets/img/señorita.jpg" alt="" />
+      <div class="text_two">
+        <h3>
+          “¡Es un café muy estético! RECOMIENDO: Tomar un Latte Art junto a
+          sus medialunas de manteca, que son muy ricas”.
+        </h3>
+        <p>
+          Las medialunas eran muy ricas y dulces, el Latte vino con crema
+          extra muy deliciosa. ¡Totalmente recomendable!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <img src="./assets/img/logoSpresso.png" alt="" />
+    <div class="iconos_footer">
+      <img src="./assets/img/linkedin.png" alt="" />
+      <img src="./assets/img/instagram.png" alt="" />
+    </div>
+    <div class="derechos">
+      <p>©2023 CODESPRESSO</p>
+    </div>
+  </footer>
+   
     </main>
   </body>
 </html>
