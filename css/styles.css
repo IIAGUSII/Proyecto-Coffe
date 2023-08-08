@@ -45,37 +45,87 @@ nav ul li {
   justify-content: space-around;
 }
 
-.our_products img{
-  width:127px ;
-  height:95px ;
+.our_products img {
+  width: 127px;
+  height: 95px;
   border-radius: 20px;
-  
-} 
-.opinions {
-  background-image: url(../assets/img/backopiniones.jpg);
-  height: 456px;
 }
 
- .product_one{
+.product_one {
   color: white;
   display: flex;
   text-align: center;
   flex-direction: column;
- }
+}
 
-  .product_one button{
-    border-radius: 20px;
-    width: 127px;
-    height: 25px;
-    background-color: #e3caa5;
-    color: white;
-    margin-top: 8px;
-    
-  }
+.product_one button {
+  border-radius: 20px;
+  width: 127px;
+  height: 25px;
+  background-color: #e3caa5;
+  color: white;
+  margin-top: 8px;
+}
 
-  .product_one p{
-    font-size: 16px;
-    font-weight: 86px;
-    
+.product_one p {
+  font-size: 16px;
+  font-weight: 86px;
+}
 
-  }
+.opinions {
+  background-color: #201520;
+  color: rgb(255, 255, 255);
+}
+
+.opinions img {
+  width: 80px;
+  height: 70px;
+  border-radius: 20%;
+}
+
+.opinions h3 {
+  font-size: 18px;
+}
+
+.opinions p {
+  font-size: 17px;
+}
+
+.opinion_one {
+  display: flex;
+  margin-top: 5px;
+}
+
+.text_opinion {
+  background-color: #c38963;
+  border-radius: 5%;
+  margin-left: 5px;
+}
+
+.opinion_two {
+  display: flex;
+}
+
+.text_two {
+  background-color: #c38963;
+  border-radius: 5%;
+
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #1b2a2b;
+  display: flex;
+}
+
+.iconos_footer img {
+  width: 25px;
+  height: 25px;
+}
+
+.derechos {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
