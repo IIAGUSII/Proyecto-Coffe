@@ -34,7 +34,7 @@ nav ul li {
 }
 
 .banner {
-  background-image: url(../assets/img/backbanner.jpg);
+  background-image: url(../assets/img/backbanner.webp);
   /* background-color: rgba(0, 0, 0, 0.5);
   opacity: 50%; */
   width: 350px;
@@ -58,14 +58,12 @@ nav ul li {
   justify-content: space-around;
   margin-top: 10px;
   row-gap: 1.5em;
-  
 }
 
-.product_show h2{
-color: white;
-font-family: "Playfair Display", serif;
-text-align: center;
-
+.product_show h2 {
+  color: white;
+  font-family: "Playfair Display", serif;
+  text-align: center;
 }
 
 .productsh2 {
@@ -319,18 +317,18 @@ text-align: center;
 
 .opinion_two {
   display: flex;
+  margin-top: 10px;
 }
 
 .text_two {
   background-color: #c38963;
   border-radius: 5%;
-
   margin-left: 5px;
-  margin-top: 10px;
 }
 
 footer {
   background-color: #1b2a2b;
+  width: 100%;
   display: flex;
 }
 
