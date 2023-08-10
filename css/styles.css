@@ -20,25 +20,25 @@ nav {
 }
 
 .img_login {
-  width: 30px;
+  width: 56px;
   height: 40px;
 }
 
 .img_shopcart {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
 }
 
 nav ul li {
   list-style: none;
 }
-
 .banner {
   background-image: url(../assets/img/backbanner.webp);
   /* background-color: rgba(0, 0, 0, 0.5);
   opacity: 50%; */
   width: 350px;
   height: 205px;
+  margin-top: 56px;
 }
 
 .product_show {
@@ -317,6 +317,7 @@ nav ul li {
 
 .opinion_two {
   display: flex;
+  margin-top: 10px;
   margin-top: 10px;
 }
 
