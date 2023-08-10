@@ -7,16 +7,31 @@ body {
 }
 
 nav {
-  background-color: #e3caa5;
+  background-color: #38232a;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.center_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0.8;
 }
 
 .img_menu {
-  width: 40px;
-  height: 30px;
-  margin-left: 5%;
+  width: 30px;
+  height: 25px;
+}
+
+.logo {
+  width: 56px;
+  height: 60px;
 }
 
 .img_login {
@@ -29,14 +44,16 @@ nav {
   height: 25px;
 }
 
-nav ul li {
-  list-style: none;
+.img_menu:hover path {
+  fill: #e3caa5;
+  cursor: pointer;
+}
+.img_shopcart:hover path {
+  fill: #e3caa5;
 }
 .banner {
   background-image: url(../assets/img/backbanner.webp);
-  /* background-color: rgba(0, 0, 0, 0.5);
-  opacity: 50%; */
-  width: 350px;
+  width: 100%;
   height: 205px;
   margin-top: 56px;
 }
@@ -288,6 +305,7 @@ nav ul li {
 * .opinions {
   background-color: #201520;
   color: rgb(255, 255, 255);
+  margin-top: 2em;
 }
 
 .opinions img {
@@ -297,11 +315,11 @@ nav ul li {
 }
 
 .opinions h3 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .opinions p {
-  font-size: 17px;
+  font-size: 12px;
 }
 
 .opinion_one {
@@ -313,18 +331,21 @@ nav ul li {
   background-color: #c38963;
   border-radius: 5%;
   margin-left: 5px;
+  padding: 5px;
+  font-family: "Inter", sans-serif;
 }
 
 .opinion_two {
   display: flex;
-  margin-top: 10px;
-  margin-top: 10px;
+  margin-top: 1.5em;
 }
 
 .text_two {
   background-color: #c38963;
   border-radius: 5%;
   margin-left: 5px;
+  padding: 5px;
+  font-family: "Inter", sans-serif;
 }
 
 footer {
@@ -333,13 +354,24 @@ footer {
   display: flex;
 }
 
+.btns_footer button {
+  width: 115px;
+  height: 21px;
+  background-color: #e3caa5;
+  border-radius: 10%;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
 .iconos_footer img {
   width: 25px;
   height: 25px;
 }
 
 .derechos {
-  display: flex;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
