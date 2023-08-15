@@ -326,9 +326,14 @@ nav {
   font-size: 12px;
 }
 
+.opinions_container {
+  display: flex;
+  gap: 3em;
+  flex-direction: column;
+}
+
 .opinion_one {
   display: flex;
-  margin-top: 5px;
 }
 
 .text_opinion {
@@ -341,7 +346,6 @@ nav {
 
 .opinion_two {
   display: flex;
-  margin-top: 1.5em;
 }
 
 .text_two {
@@ -355,7 +359,35 @@ nav {
 footer {
   background-color: #1b2a2b;
   width: 100%;
+}
+
+.footer_all {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgs_footer_two {
+  display: flex;
+  gap: 7.5em;
+  align-items: center;
+}
+
+.item_inst img {
+  width: 25px;
+  height: 25px;
+}
+
+.item_linke img {
+  width: 25px;
+  height: 25px;
+}
+
+.btns_footer {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
 }
 
 .btns_footer button {
@@ -370,12 +402,12 @@ footer {
   border: none;
 }
 
-.iconos_footer img {
-  width: 25px;
-  height: 25px;
-}
-
 .derechos {
   background-color: rgb(0, 0, 0);
+  width: 100%;
   color: rgb(255, 255, 255);
+}
+
+.derechos p {
+  text-align: center;
 }
