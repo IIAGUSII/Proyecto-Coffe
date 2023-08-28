@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <title>Contactanos</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <section class="form_contact">
+          <div class="formulary">
+            <form action="process_contact" method="post">
+              <div class="form_name">
+                <label class="labels_form" for="name"></label>
+                <input
+                  placeholder="Ingrese su nombre..."
+                  class="inputs_form"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                />
+                <label class="labels_form" for="last_name"></label>
+                <input
+                  placeholder="Ingrese su apellido..."
+                  class="inputs_form"
+                  type="text"
+                  id="last_name"
+                  name="last_name"
+                  required
+                />
+
+                <label class="labels_form" for="email"></label>
+                <input
+                  placeholder="Ingrese su mail..."
+                  class="inputs_form"
+                  type="text"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="text_area">
+                <label class="text_form" for="consult">
+                  ¿Cuál es su consulta?</label
+                >
+                <textarea
+                  class="text_consult"
+                  name="text_consult"
+                  id="text_consult"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="button">
+                <button class="btn_form" type="submit">¡CONTACTANOS!</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div class="footer_all">
+        <div class="imgs_footer_two">
+          <div class="item_inst">
+            <img src="../assets/img/instagram.png" alt="" />
+          </div>
+          <div class="img_footer">
+            <img src="../assets/img/logoSpresso.png" alt="" />
+          </div>
+          <div class="item_linke">
+            <img src="../assets/img/linkedin.png" alt="" />
+          </div>
+        </div>
+        <div class="btns_footer">
+          <button class="btn_contact">
+            <span>¡CONTACTANOS!</span>
+          </button>
+          <button class="btn_products">
+            <span>PRODUCTOS</span>
+          </button>
+          <button class="btn_menu">
+            <span>MENÚ COFFEE</span>
+          </button>
+        </div>
+        <div class="derechos">
+          <p>©2023 CODESPRESSO</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
