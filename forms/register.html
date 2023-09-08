@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/register.css" />
+    <title>Contactanos</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <section class="form_register">
+          <div class="form">
+            <form action="process_contact" method="post">
+              <div class="form_person">
+                <label class="label_name" for="name">
+                <input
+                  placeholder="Ingrese su nombre..."
+                  class="inputs_form"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                /></label>
+                <label class="label_last" for="last_name">
+                <input
+                  placeholder="Ingrese su apellido..."
+                  class="inputs_form"
+                  type="text"
+                  id="last_name"
+                  name="last_name"
+                  required
+                /></label>
+
+                <label class="label_email" for="email">
+                <input
+                  placeholder="Ingrese su email..."
+                  class="inputs_form"
+                  type="text"
+                  id="email"
+                  name="email"
+                  required
+                /></label>
+
+                <label class="label_password" for="password">
+                  <input placeholder="ingrese su contraseña" class="inputs_form" type="password" name="password" id="password" required/>
+                </label>
+              </div>
+              
+              <label class="label_date" for="date">Fecha de nacimiento
+                <input class="inputs_form date" name="date" type="date">
+              </label>
+              
+              <div class="gender_div">
+                <legend class="gender">Genero</legend>
+                <label class="input_gender man" for="gender">
+                  <p>Hombre</p>
+                  <input class="" name="gender" type="radio">
+                </label>
+                <label class="input_gender woman" for="gender">
+                  <p class="">Mujer</p>
+                  <input class="" name="gender" type="radio" >
+                </label>
+                <label class="input_gender other" for="gender">
+                  <p>Otro</p>
+                  <input class="" name="gender" type="radio">
+                </label>
+              </div>
+
+
+              <div class="button">
+                <button class="btn_form" type="submit">Registrarse</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div class="footer_all">
+        <div class="imgs_footer_two">
+          <div class="item_inst">
+            <img src="../assets/img/instagram.png" alt="" />
+          </div>
+          <div class="img_footer">
+            <img src="../assets/img/logoSpresso.png" alt="" />
+          </div>
+          <div class="item_linke">
+            <img src="../assets/img/linkedin.png" alt="" />
+          </div>
+        </div>
+        <div class="btns_footer">
+          <button class="btn_contact">
+            <span>¡CONTACTANOS!</span>
+          </button>
+          <button class="btn_products">
+            <span>PRODUCTOS</span>
+          </button>
+          <button class="btn_menu">
+            <span>MENÚ COFFEE</span>
+          </button>
+        </div>
+        <div class="derechos">
+          <p>©2023 CODESPRESSO</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
