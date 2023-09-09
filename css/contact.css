@@ -24,12 +24,13 @@ main {
 
 .form_name {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin: 10px;
 }
 
 .inputs_form {
+  display: flex;
   background-color: #d9d9d957;
   width: 160px;
   height: 29px;
@@ -42,11 +43,8 @@ main {
   text-align: center;
 }
 
-.text_area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5px;
+.input_mail {
+  margin: 10px;
 }
 
 .text_form {
@@ -54,11 +52,25 @@ main {
   margin: 10px;
 }
 
-.text_consult {
+.radios_consult {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.radios_consult p {
+  text-align: center;
+}
+
+.input_consult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #d9d9d957;
-  border-radius: 20px;
+  border-radius: 32px;
   border: none;
-  padding: 8px;
+  width: 88px;
+  height: 29px;
 }
 
 .button {
