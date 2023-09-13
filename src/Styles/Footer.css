@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background-color: #1b2a2b;
+  width: 100%;
+}
+.footer_all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.logo_footer {
+
+  margin: 0 auto;
+}
+
+.btns_footer {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  grid-gap: 18px;
+  grid-template-areas:
+    "area1 area1 area1 area1 area1"
+    "area2 area2 . area3 area3";
+  justify-items: center;
+}
+
+.btn_contact {
+  grid-area: area1;
+  margin-top: 5%; 
+}
+
+.btn_products {
+  grid-area: area2;
+}
+
+.btn_menu {
+  grid-area: area3;
+}
+
+.btns_footer button {
+  width: 115px;
+  height: 21px;
+  background-color: #e3caa5;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
+.imgs_footer {
+  display: flex;
+  gap: 7.5em;
+  align-items: center;
+  justify-content: center;
+  margin: 13px;
+}
+
+.imgs_footer img {
+  width: 25px;
+  height: 25px;
+}
+
+.derechos {
+  background-color: black;
+display: flex;
+  color: rgb(255, 255, 255);
+width: 100%;
+justify-content: center;
+align-items: center;
+
+}
+
+.derechos p {
+  text-align: center;
+}
+
+.items-all{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}

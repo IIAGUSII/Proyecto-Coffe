@@ -1,0 +1,34 @@
+.section-products {
+ margin: 0 auto;
+ background-color: #201520;
+ padding: 0.1%;
+}
+
+.our-products {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 8%;
+  gap: 2em;
+width: 90%;
+align-items: center;
+
+
+  
+}
+
+.products-texts {
+margin: 0 auto;
+width: 90%;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-top: 6%;
+  font-family: "Playfair Display", serif;
+}
