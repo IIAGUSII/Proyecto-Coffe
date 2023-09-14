@@ -29,3 +29,11 @@ nav {
   width: 50px;
   height: 50px;
 }
+
+.hambur-icon:hover{
+  fill:#e3caa5;
+}
+
+.shop-icon:hover{
+  fill:#e3caa5;
+}

@@ -8,11 +8,15 @@ export const UserContextProvider = ({ children }) => {
       .then((res) => res.json())
       .then((data) => setApiData(data));
   }, []);
-  return(
-    <UserContext.Provider value={apiData}>
-        {children}
-    </UserContext.Provider>
-  ) 
+
+  const [isHambur, setIsHambur] = useState(false);
+   const contextValue = {
+    apiData,
+    isHambur,
+    setIsHambur,
+  }
+
+  return (
+    <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>
+  );
 };
-
-
