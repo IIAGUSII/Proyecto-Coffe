@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import "../../styles/Section-products.css";
 import Product from "./product";
-const url = "https://64fa6148cb9c00518f79e584.mockapi.io/api/products";
 import { UserContext } from "../../../UserContext";
+
+const url = "https://64fa6148cb9c00518f79e584.mockapi.io/api/products";
+
 function OurProducts() {
   const apiData = useContext(UserContext);
 
