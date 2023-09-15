@@ -2,7 +2,8 @@ import "../../styles/Nav.css";
 import Hambur from "./icons/Hambur";
 import Shop from "./icons/Shop";
 import imagen1 from "../../assets/img/logocodespresso2.png";
-function Nav() {
+import { useState } from "react";
+function Nav(setHambur) {
   return (
     <nav className="section-navbar">
       <Hambur></Hambur>

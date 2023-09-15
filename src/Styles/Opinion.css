@@ -2,7 +2,6 @@
   display: flex;
   gap: 3em;
   flex-direction: column;
-
   width: 90%;
   margin: 0 auto;
 }
@@ -10,7 +9,6 @@
 .opinions {
   background-color: #201520;
   color: rgb(255, 255, 255);
-
   margin-top: 10%;
 }
 
@@ -47,6 +45,7 @@
 
 .opinion_two {
   display: flex;
+  margin-bottom: 15%;
 }
 
 .text_two {

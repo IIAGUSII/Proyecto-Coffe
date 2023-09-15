@@ -1,13 +1,23 @@
 import "../../styles/MainBanner.css";
 import SearchBar from "./SearchBar";
 import TextsBanner from "./TextsBanner";
-
+import { useContext } from "react";
+import { UserContext } from "../../../UserContext";
+import HamburgerDeploy from "./HamburgerDeploy";
 function Banner() {
+  const { apiData, isHambur } = useContext(UserContext);
   return (
     <article className="main-banner">
       <div className="filter">
-      <TextsBanner></TextsBanner>
-      <SearchBar></SearchBar>
+        {isHambur ? (
+          <HamburgerDeploy />
+        ) : (
+          <>
+            <TextsBanner />
+            <SearchBar />
+            
+          </>
+        )}
       </div>
     </article>
   );

@@ -9,7 +9,7 @@ function Main() {
       <Banner></Banner>
       <OurProducts></OurProducts>
        <Opinions></Opinions>
-       <Footer></Footer>
+    
       
     </main>
   )
