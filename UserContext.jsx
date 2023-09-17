@@ -10,11 +10,27 @@ export const UserContextProvider = ({ children }) => {
   }, []);
 
   const [isHambur, setIsHambur] = useState(false);
-   const contextValue = {
+  const [isHamburCoffee, setIsHamburCoffee] = useState(true);
+  const [isHamburCoffeeMaker, setIsHamburCoffeeMaker] = useState(true);
+  
+  function resetHambur() {
+    return (
+      setIsHamburCoffee(true),
+      setIsHamburCoffee(true),
+      setIsHamburCoffeeMaker(true)
+    );
+  }
+  const contextValue = {
     apiData,
     isHambur,
     setIsHambur,
-  }
+    isHamburCoffee,
+    setIsHamburCoffee,
+    resetHambur,
+    isHamburCoffeeMaker,
+    setIsHamburCoffeeMaker,
+   
+  };
 
   return (
     <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>

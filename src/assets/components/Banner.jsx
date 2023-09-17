@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { UserContext } from "../../../UserContext";
 import HamburgerDeploy from "./HamburgerDeploy";
 function Banner() {
-  const { apiData, isHambur } = useContext(UserContext);
+  const { isHambur } = useContext(UserContext);
   return (
     <article className="main-banner">
       <div className="filter">
@@ -15,7 +15,6 @@ function Banner() {
           <>
             <TextsBanner />
             <SearchBar />
-            
           </>
         )}
       </div>

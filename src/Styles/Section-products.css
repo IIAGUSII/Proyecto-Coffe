@@ -1,7 +1,8 @@
 .section-products {
  margin: 0 auto;
  background-color: #201520;
- padding: 0.1%;
+ margin-top: 6%;
+
 }
 
 .our-products {
@@ -28,7 +29,8 @@ width: 90%;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-top: 10;
 
-  margin-top: 6%;
+
   font-family: "Playfair Display", serif;
 }
