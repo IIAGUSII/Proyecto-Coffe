@@ -1,0 +1,37 @@
+main {
+  margin: 0 auto;
+  background-color: #201520;
+  padding: 0.1%;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pages button {
+  color: black;
+  background-color: #e3caa5;
+  width: 75px;
+  height: 25px;
+  border-radius: 80px;
+  border: none;
+  margin: 1em;
+}
+
+.pages span {
+  font-size: 18px;
+  color: black;
+  background-color: #e3caa5;
+  width: 30px;
+  height: 25px;
+  border-radius: 30px;
+  text-align: center;
+}

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../styles/Footer.css";
 import logoSpresso from "../img/logoSpresso.png";
 import linkedin from "../img/linkedin.png";
@@ -13,15 +13,15 @@ function Footer() {
             <img src={logoSpresso} alt="" />
           </div>
           <div className="btns_footer">
-            <button className="btn_contact">
-              <span>¡CONTACTANOS!</span>
-            </button>
-            <button className="btn_products">
-              <span>PRODUCTOS</span>
-            </button>
-            <button className="btn_menu">
-              <span>MENÚ COFFEE</span>
-            </button>
+            <Link className="hola btn_link" to="/contact">
+              <button className="btn_contact">¡CONTACTANOS!</button>
+            </Link>
+            <Link className="hola2 btn_link">
+              <button className="btn_products">PRODUCTOS</button>
+            </Link>
+            <Link className="hola3 btn_link">
+              <button className="btn_menu">MENÚ COFFEE</button>
+            </Link>
           </div>
           <div className="imgs_footer">
             <div className="item_inst">

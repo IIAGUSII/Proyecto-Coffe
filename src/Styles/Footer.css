@@ -12,12 +12,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
- 
 }
 
 .logo_footer {
-
   margin: 0 auto;
 }
 
@@ -31,29 +28,38 @@ footer {
   justify-items: center;
 }
 
-.btn_contact {
+.btns_footer .hola {
   grid-area: area1;
-  margin-top: 5%; 
+  margin-top: 5%;
 }
 
-.btn_products {
+.btns_footer .hola2 {
   grid-area: area2;
 }
 
-.btn_menu {
+.btns_footer .hola3 {
   grid-area: area3;
+  font-weight: bold;
+  outline: none;
+  border: none;
 }
 
-.btns_footer button {
+.btn_link {
   width: 115px;
   height: 21px;
-  background-color: #e3caa5;
   border-radius: 10px;
   color: white;
+  overflow: hidden;
+}
+
+.btn_link button {
+  width: 100%;
+  height: 100%;
   font-size: 12px;
   font-weight: bold;
   outline: none;
   border: none;
+  background-color: #e3caa5;
 }
 
 .imgs_footer {
@@ -71,19 +77,18 @@ footer {
 
 .derechos {
   background-color: black;
-display: flex;
+  display: flex;
   color: rgb(255, 255, 255);
-width: 100%;
-justify-content: center;
-align-items: center;
-
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .derechos p {
   text-align: center;
 }
 
-.items-all{
+.items-all {
   margin-top: 5%;
   display: flex;
   flex-direction: column;
