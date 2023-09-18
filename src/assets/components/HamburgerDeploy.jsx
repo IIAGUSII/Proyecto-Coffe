@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../../styles/HamburgerDeploy.css";
 import SearchBar from "./SearchBar";
 import { useState } from "react";
@@ -41,16 +42,17 @@ function HamburgerDeploy() {
 
             <div className="selectorHambur">
               <button onClick={toggleCoffeeMenu} className="buttonHambur">
-                COFFEE MENU
+                MENÚ COFFEE
               </button>
 
               <button onClick={toggleCoffeeMaker} className="buttonHambur">
-                CAFETERAS/CAFE MOLIDO
+                CAFETERAS/CAFÉ MOLIDO
               </button>
-
-              <button onClick={toggleCoffeeProducts} className="buttonHambur">
-                PRODUCTOS
-              </button>
+              <Link to="/products">
+                <button onClick={toggleCoffeeProducts} className="buttonHambur">
+                  PRODUCTOS
+                </button>
+              </Link>
             </div>
             <div className="registerContainer">
               <button className="registerHambur">REGISTRO</button>

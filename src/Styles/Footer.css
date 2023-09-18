@@ -28,16 +28,16 @@ footer {
   justify-items: center;
 }
 
-.btns_footer .hola {
+.btns_footer .links_one {
   grid-area: area1;
   margin-top: 5%;
 }
 
-.btns_footer .hola2 {
+.btns_footer .links_two {
   grid-area: area2;
 }
 
-.btns_footer .hola3 {
+.btns_footer .links_three {
   grid-area: area3;
   font-weight: bold;
   outline: none;
@@ -48,7 +48,6 @@ footer {
   width: 115px;
   height: 21px;
   border-radius: 10px;
-  color: white;
   overflow: hidden;
 }
 
@@ -60,6 +59,7 @@ footer {
   outline: none;
   border: none;
   background-color: #e3caa5;
+  color: white;
 }
 
 .imgs_footer {

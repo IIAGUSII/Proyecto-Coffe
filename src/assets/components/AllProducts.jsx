@@ -1,13 +1,12 @@
 import { useContext, useState } from "react";
 import Product from "./product";
-import "../Styles/AllProducts.css";
-import { UserContext } from "../../../../UserContext";
+import "../../Styles/AllProducts.css";
+import { UserContext } from "../../../UserContext";
 
-const url = "https://64fa6148cb9c00518f79e584.mockapi.io/api/products";
 const productsPerPage = 11;
 
 function AllProducts() {
-  const apiData = useContext(UserContext);
+  const { apiData } = useContext(UserContext);
   const [currentPage, setCurrentPage] = useState(1);
 
   const startIndex = (currentPage - 1) * productsPerPage;

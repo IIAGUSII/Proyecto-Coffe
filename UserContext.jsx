@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { render } from "react-dom";
+
 export const UserContext = createContext();
 const url = "https://64fa6148cb9c00518f79e584.mockapi.io/api/products";
 export const UserContextProvider = ({ children }) => {

@@ -1,18 +1,16 @@
-import Banner from "./Banner"
-import Opinions from "./Opinions"
-import OurProducts from "./OurProducts"
-import '../../styles/Main.css';
-import Footer from "./Footer"
+import Banner from "./Banner";
+import Opinions from "./Opinions";
+import OurProducts from "./OurProducts";
+import "../../styles/Main.css";
+
 function Main() {
   return (
     <main>
       <Banner></Banner>
       <OurProducts></OurProducts>
-       <Opinions></Opinions>
-    
-      
+      <Opinions></Opinions>
     </main>
-  )
+  );
 }
 
-export default Main
+export default Main;

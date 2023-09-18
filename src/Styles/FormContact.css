@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+
+.form_contact {
+  background-image: url(../assets/img/back_form.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.formulary {
+  background-color: #00000060;
+  display: flex;
+}
+
+.form_name {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.inputs_form {
+  background-color: #d9d9d957;
+  width: 160px;
+  height: 29px;
+  border-radius: 32px;
+  border: none;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.input_mail {
+  margin: 10px;
+}
+
+.text_form {
+  display: flex;
+  margin: 10px;
+}
+
+.radios_consult {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.radios_consult p {
+  text-align: center;
+}
+
+.input_consult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d957;
+  border-radius: 32px;
+  border: none;
+  width: 88px;
+  height: 29px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_form {
+  background-color: #e3caa5 !important;
+  width: 110px;
+  height: 25px;
+  border-radius: 80px;
+  border: none;
+  margin-bottom: 1em;
+}

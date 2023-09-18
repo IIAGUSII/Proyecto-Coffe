@@ -1,6 +1,6 @@
 .hamburger-deploy {
   width: 100%;
-height: 40vh;
+  height: 40vh;
   background-image: url(../assets/img/CODESPRESSOBACK3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,16 +12,13 @@ height: 40vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around ;
+  justify-content: space-around;
   align-items: center;
-  
 }
 
-.searchBar{
+.searchBar {
   display: flex;
-
 }
-
 
 .selectorHambur {
   display: flex;
@@ -30,7 +27,6 @@ height: 40vh;
   justify-content: center;
   gap: 0.7rem;
   align-items: center;
-  
 }
 
 .buttonHambur {
@@ -50,7 +46,7 @@ height: 40vh;
   cursor: pointer;
 }
 
-.registerContainer{
+.registerContainer {
   align-self: flex-end;
   margin-right: 3%;
 }
@@ -70,4 +66,3 @@ height: 40vh;
   line-height: normal;
   cursor: pointer;
 }
-

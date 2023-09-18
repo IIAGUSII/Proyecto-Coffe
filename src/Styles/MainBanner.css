@@ -1,23 +1,18 @@
-.main-banner{
+.main-banner {
   width: 100%;
   height: 40vh;
   background-image: url(../assets/img/backbanner.webp);
   background-repeat: no-repeat;
   background-size: cover;
-
-
- 
 }
 
-.filter{
+.filter {
   background-color: #00000060;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   gap: 1em;
- 
 }
-

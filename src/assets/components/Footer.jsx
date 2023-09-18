@@ -13,13 +13,13 @@ function Footer() {
             <img src={logoSpresso} alt="" />
           </div>
           <div className="btns_footer">
-            <Link className="hola btn_link" to="/contact">
+            <Link className="links_one btn_link" to="/contact">
               <button className="btn_contact">¡CONTACTANOS!</button>
             </Link>
-            <Link className="hola2 btn_link">
+            <Link className="links_two btn_link" to="/products">
               <button className="btn_products">PRODUCTOS</button>
             </Link>
-            <Link className="hola3 btn_link">
+            <Link className="links_three btn_link">
               <button className="btn_menu">MENÚ COFFEE</button>
             </Link>
           </div>

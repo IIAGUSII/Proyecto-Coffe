@@ -3,9 +3,10 @@ import SearchIcon from "./icons/searchIcon";
 
 function SearchBar() {
   return (
-    <form>
+    <form className="form_search">
       <div className="filter-search">
         <input
+          className=""
           type="search"
           name="search"
           id="search"
