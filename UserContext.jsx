@@ -8,14 +8,28 @@ export const UserContextProvider = ({ children }) => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setApiData(data));
-    console.log("render");
   }, []);
 
   const [isHambur, setIsHambur] = useState(false);
+  const [isHamburCoffee, setIsHamburCoffee] = useState(true);
+  const [isHamburCoffeeMaker, setIsHamburCoffeeMaker] = useState(true);
+
+  function resetHambur() {
+    return (
+      setIsHamburCoffee(true),
+      setIsHamburCoffee(true),
+      setIsHamburCoffeeMaker(true)
+    );
+  }
   const contextValue = {
     apiData,
     isHambur,
     setIsHambur,
+    isHamburCoffee,
+    setIsHamburCoffee,
+    resetHambur,
+    isHamburCoffeeMaker,
+    setIsHamburCoffeeMaker,
   };
 
   return (

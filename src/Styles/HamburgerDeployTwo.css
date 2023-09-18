@@ -1,0 +1,47 @@
+.hamburger-deploy-two {
+  width: 100%;
+  height: 40vh;
+  background-image: url(../assets/img/CODESPRESSOBACK3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hamburger-filter-two {
+  background-color: #00000060;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectorHambur-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.buttonHambur-two {
+  display: flex;
+  width: 115px;
+  height: 40px;
+  padding: 5px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #e3caa5;
+  color: white;
+  outline: none;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.35);
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
