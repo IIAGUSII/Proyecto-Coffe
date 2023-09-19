@@ -5,8 +5,8 @@
   margin: 0;
 }
 
-body{
-    background: #201520;
+body {
+  background: #201520;
 }
 
 .containerProducts {
@@ -19,8 +19,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 184px;
-  height: 52px;
+  width: 117px;
+  height: 45px;
   border-radius: 10px;
   background: #e3caa5;
   margin: 0 auto;
@@ -32,7 +32,7 @@ body{
 
   text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.35);
 
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -82,4 +82,3 @@ body{
   padding: 1em;
   margin-left: 5%;
 }
-
