@@ -58,7 +58,7 @@ return(
                   <p className="">Mujer</p>
                   <input className="" name="gender" type="radio" />
                 </label>
-                <label className="input_gender other" htmlFor="gender">
+                <label className="input_gender otherRegister" htmlFor="gender">
                   <p>Otro</p>
                   <input className="" name="gender" type="radio"/>
                 </label>
