@@ -1,9 +1,9 @@
-import señorito from "../img/señorito.webp";
+import señoritoAndrew from "../img/señoritoAndrew.webp";
 
 function OpinionOne() {
   return (
     <div className="opinion_one">
-      <img src={señorito} alt="" />
+      <img src={señoritoAndrew} alt="" />
       <div className="text_opinion">
         <h3>
           "¡Un gran café Affogato! RECOMIENDO: Tomar un Affogato junto a una

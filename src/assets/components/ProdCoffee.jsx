@@ -5,6 +5,7 @@ import { UserContext } from "../../../UserContext";
 import ProductCoffee from "./ProdsDesign";
 import SearchBar from "./SearchBar";
 import HamburgerDeploy from "./HamburgerDeploy";
+
 function FilterCoffee() {
   const idFilterCold = ["1", "2", "3", "4"];
   const idFilterHot = ["5", "6", "7", "8", "9"];
@@ -24,7 +25,7 @@ function FilterCoffee() {
 
   return (
     <>
-     <HamburgerDeploy></HamburgerDeploy>
+      <HamburgerDeploy></HamburgerDeploy>
       <div className="search-bar-section">
         <SearchBar></SearchBar>
       </div>

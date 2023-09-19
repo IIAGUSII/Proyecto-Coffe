@@ -8,6 +8,7 @@ import FilterCoffee from "./ProdCoffee";
 import ProdFood from "./ProdFood";
 import CoffeeMaker from "./ProdCoffeeMaker";
 import GroundCoffee from "./ProdGroundCoffe";
+import Register from "./Register";
 
 function RoutesPage() {
   return (
@@ -21,7 +22,7 @@ function RoutesPage() {
         <Route path="/comidas" element={<ProdFood />}></Route>
         <Route path="/cafeteras" element={<CoffeeMaker />}></Route>
         <Route path="/cafemolido" element={<GroundCoffee />}></Route>
-        <Route path="/home" element={<GroundCoffee />}></Route>
+        <Route path="/registro" element={<Register />}></Route>
       </Routes>
     </>
   );
