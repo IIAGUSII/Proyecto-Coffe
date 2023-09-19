@@ -84,8 +84,9 @@
   grid-row: 1/2;
 }
 .other{
-  grid-column: 14/15;
-  grid-row: 1/2;
+  grid-column: 12/13 !important;
+  grid-row: 1/2 !important;
+
 }
 
 .radios_consult p {
