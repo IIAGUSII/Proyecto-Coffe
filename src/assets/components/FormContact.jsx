@@ -41,7 +41,7 @@ function Form() {
               name="last_name"
               required
             />
-            <div className="input_mail">
+            
               <label className="labels_form" htmlFor="email"></label>
               <input
                 ref={mail}
@@ -52,10 +52,10 @@ function Form() {
                 name="email"
                 required
               />
-            </div>
+            
           </div>
           <label className="text_form" htmlFor="consult">
-            ¿Cuál es su consulta?
+            <p>¿Cuál es su consulta?</p>
           </label>
           <div className="radios_consult">
             <label className="input_consult pay" htmlFor="pay">
@@ -64,11 +64,11 @@ function Form() {
             </label>
             <label className="input_consult work" htmlFor="work">
               <p>Trabajar con nosotros</p>
-              <input ref={workWithUs} className="" name="work" type="radio" />
+              <input ref={workWithUs} className="" name="pay" type="radio" />
             </label>
             <label className="input_consult other" htmlFor="other">
               <p>Otro</p>
-              <input ref={forOther} className="" name="other" type="radio" />
+              <input ref={forOther} className="" name="pay" type="radio" />
             </label>
           </div>
           <div className="button">
