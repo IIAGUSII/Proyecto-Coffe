@@ -5,11 +5,18 @@ import { useContext } from "react";
 import { UserContext } from "../../../UserContext";
 import HamburgerDeploy from "./HamburgerDeploy";
 function Banner() {
+  const { isHambur } = useContext(UserContext);
   return (
     <article className="main-banner">
       <div className="filter">
-        <TextsBanner />
-        <SearchBar />
+        {isHambur ? (
+          <HamburgerDeploy />
+        ) : (
+          <>
+            <TextsBanner />
+            <SearchBar />
+          </>
+        )}
       </div>
     </article>
   );

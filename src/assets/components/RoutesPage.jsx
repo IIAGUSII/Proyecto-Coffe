@@ -21,6 +21,7 @@ function RoutesPage() {
         <Route path="/comidas" element={<ProdFood />}></Route>
         <Route path="/cafeteras" element={<CoffeeMaker />}></Route>
         <Route path="/cafemolido" element={<GroundCoffee />}></Route>
+        <Route path="/home" element={<GroundCoffee />}></Route>
       </Routes>
     </>
   );

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   color: rgb(255, 255, 255);
-  font-size: 12px;
+
 }
 
 .form_contact {
@@ -53,6 +53,7 @@
 
 .radios_consult p {
   text-align: center;
+  font-size: 12px;
 }
 
 .input_consult {

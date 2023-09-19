@@ -1,10 +1,10 @@
 import "../../styles/Register.css";
-
+import Banner from "./Banner";
 function Register() {
 
 return(
     <>
-
+<Banner></Banner>
      <article className="main_register">
       <section className="form_register">
        <div className="form">

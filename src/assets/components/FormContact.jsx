@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import "../../Styles/FormContact.css";
+import Banner from "./Banner";
 
 function Form() {
   const name = useRef();
@@ -14,6 +15,8 @@ function Form() {
   };
 
   return (
+    <>
+    <Banner></Banner>
     <section className="form_contact">
       <div className="formulary">
         <form onSubmit={handleSubmit}>
@@ -76,6 +79,7 @@ function Form() {
         </form>
       </div>
     </section>
+    </>
   );
 }
 
