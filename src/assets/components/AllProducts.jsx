@@ -2,11 +2,14 @@ import { useContext, useState } from "react";
 import Product from "./product";
 import "../../Styles/AllProducts.css";
 import { UserContext } from "../../../UserContext";
-
+import Banner from "./Banner";
+import ProductsDesign from "./ProdsDesign";
+import HamburgerDeploy from "./HamburgerDeploy";
+import SearchBar from "./SearchBar";
 const productsPerPage = 11;
 
 function AllProducts() {
-  const { apiData } = useContext(UserContext);
+  const { apiData, searchText } = useContext(UserContext);
   const [currentPage, setCurrentPage] = useState(1);
 
   const startIndex = (currentPage - 1) * productsPerPage;
@@ -29,11 +32,21 @@ function AllProducts() {
 
   return (
     <main>
+   <HamburgerDeploy></HamburgerDeploy>
+   <div className="search-bar-section">
+        <SearchBar></SearchBar>
+      </div>
       <section className="all-products">
+      
+        <span className="products-h2-all-products">
+        
         <h2>PRODUCTOS</h2>
+        </span>
         <div className="products">
+          
           {productsToShow.map((product) => (
-            <Product product={product} key={product.id} />
+              
+            <ProductsDesign product={product} key={product.id} />
           ))}
         </div>
       </section>

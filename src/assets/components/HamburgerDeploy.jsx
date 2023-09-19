@@ -5,6 +5,8 @@ import { useState } from "react";
 import MenuCoffee from "./MenuCoffee";
 import HamburgerDeployTwo from "./HamburgerDeployTwo";
 import HamburgerDeployThree from "./HamburgerDeployThree";
+import Home from "./icons/home";
+
 
 function HamburgerDeploy() {
   const [isAllContentVisible, setIsAllContentVisible] = useState(true);
@@ -37,7 +39,7 @@ function HamburgerDeploy() {
         <section className="hamburger-deploy">
           <div className="hamburger-filter">
             <div className="searchBar">
-              <SearchBar></SearchBar>
+              {/* <SearchBar></SearchBar> */}
             </div>
 
             <div className="selectorHambur">
@@ -49,12 +51,16 @@ function HamburgerDeploy() {
                 CAFETERAS/CAFÉ MOLIDO
               </button>
               <Link to="/products">
-                <button onClick={toggleCoffeeProducts} className="buttonHambur">
+                <button className="buttonHambur">
                   PRODUCTOS
                 </button>
               </Link>
             </div>
+            
             <div className="registerContainer">
+              <Link to="/">
+              <Home></Home>
+              </Link>
               <button className="registerHambur">REGISTRO</button>
             </div>
           </div>

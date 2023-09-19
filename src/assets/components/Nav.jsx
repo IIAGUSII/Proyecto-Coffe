@@ -18,7 +18,7 @@ function Nav(setHambur) {
         </div>
         <Shop></Shop>
       </nav>
-      {isHambur ? <HamburgerDeploy /> : null}
+      
     </>
   );
 }

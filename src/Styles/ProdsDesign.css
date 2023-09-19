@@ -13,6 +13,13 @@ body{
   display: flex;
   flex-direction: column;
   gap: 2.5em;
+  margin-bottom: 5%;
+}
+
+.search-bar-section{
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
 }
 
 .coffee-selection {
@@ -31,8 +38,6 @@ body{
   color: #fff;
 
   text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.35);
-
-  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

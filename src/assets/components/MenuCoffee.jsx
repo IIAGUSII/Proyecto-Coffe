@@ -1,10 +1,13 @@
 import "../../styles/MenuCoffee.css";
 import { Link } from "react-router-dom";
-
+import Banner from "./Banner";
 function MenuCoffee() {
   return (
+    <>
+
     <div className="menuCoffeContainer">
       <div className="filterMenuCoffee">
+        
         <h2>MENU COFFE</h2>
         <div className="buttonContainer">
           <Link to="/coffee">
@@ -16,6 +19,7 @@ function MenuCoffee() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

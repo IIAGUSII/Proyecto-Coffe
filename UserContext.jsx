@@ -13,6 +13,7 @@ export const UserContextProvider = ({ children }) => {
   const [isHambur, setIsHambur] = useState(false);
   const [isHamburCoffee, setIsHamburCoffee] = useState(true);
   const [isHamburCoffeeMaker, setIsHamburCoffeeMaker] = useState(true);
+  const [searchText, setSearchText] = useState("");
 
   function resetHambur() {
     return (
@@ -21,6 +22,11 @@ export const UserContextProvider = ({ children }) => {
       setIsHamburCoffeeMaker(true)
     );
   }
+
+  const handleChangeText = (e) => {
+    setSearchText(e.target.value);
+  };
+
   const contextValue = {
     apiData,
     isHambur,
@@ -30,6 +36,8 @@ export const UserContextProvider = ({ children }) => {
     resetHambur,
     isHamburCoffeeMaker,
     setIsHamburCoffeeMaker,
+    handleChangeText,
+    searchText
   };
 
   return (
