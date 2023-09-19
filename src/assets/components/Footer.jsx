@@ -19,8 +19,8 @@ function Footer() {
             <Link className="links_two btn_link" to="/products">
               <button className="btn_products">PRODUCTOS</button>
             </Link>
-            <Link className="links_three btn_link">
-              <button className="btn_menu">MENÚ COFFEE</button>
+            <Link className="links_three btn_link" to="/coffee">
+              <button className="btn_menu">COFFEEs</button>
             </Link>
           </div>
           <div className="imgs_footer">

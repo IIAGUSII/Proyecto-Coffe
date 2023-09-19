@@ -7,7 +7,6 @@ import HamburgerDeployTwo from "./HamburgerDeployTwo";
 import HamburgerDeployThree from "./HamburgerDeployThree";
 import Home from "./icons/home";
 
-
 function HamburgerDeploy() {
   const [isAllContentVisible, setIsAllContentVisible] = useState(true);
   const [isCoffeeMakerContentVisible, setIsCoffeeMakerContentVisible] =
@@ -38,9 +37,7 @@ function HamburgerDeploy() {
       {isAllContentVisible ? (
         <section className="hamburger-deploy">
           <div className="hamburger-filter">
-            <div className="searchBar">
-              {/* <SearchBar></SearchBar> */}
-            </div>
+            <div className="searchBar">{/* <SearchBar></SearchBar> */}</div>
 
             <div className="selectorHambur">
               <button onClick={toggleCoffeeMenu} className="buttonHambur">
@@ -51,17 +48,17 @@ function HamburgerDeploy() {
                 CAFETERAS/CAFÉ MOLIDO
               </button>
               <Link to="/products">
-                <button className="buttonHambur">
-                  PRODUCTOS
-                </button>
+                <button className="buttonHambur">PRODUCTOS</button>
               </Link>
             </div>
-            
+
             <div className="registerContainer">
               <Link to="/">
-              <Home></Home>
+                <Home></Home>
               </Link>
-              <button className="registerHambur">REGISTRO</button>
+              <Link to="/registro">
+                <button className="registerHambur">REGISTRO</button>
+              </Link>
             </div>
           </div>
         </section>
