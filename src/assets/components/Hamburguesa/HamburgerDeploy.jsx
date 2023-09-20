@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import "../../styles/HamburgerDeploy.css";
-import SearchBar from "./SearchBar";
+import "./HamburgerDeploy.css";
 import { useState } from "react";
 import MenuCoffee from "./MenuCoffee";
 import HamburgerDeployTwo from "./HamburgerDeployTwo";
 import HamburgerDeployThree from "./HamburgerDeployThree";
-import Home from "./icons/home";
+import Home from "../icons/Home";
 
 function HamburgerDeploy() {
   const [isAllContentVisible, setIsAllContentVisible] = useState(true);

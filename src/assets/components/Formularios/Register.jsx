@@ -3,7 +3,7 @@ import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy";
 function Register() {
   return (
     <>
-      <HamburgerDeploy />
+      <HamburgerDeploy></HamburgerDeploy>
       <article className="main_register">
         <section className="form_register">
           <div className="form">

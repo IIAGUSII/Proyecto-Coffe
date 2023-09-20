@@ -1,4 +1,4 @@
-import "../../styles/HamburgerDeployTwo.css";
+import "./HamburgerDeployTwo.css";
 import { Link } from "react-router-dom";
 
 function HamburgerDeployTwo() {

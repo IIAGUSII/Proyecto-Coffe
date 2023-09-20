@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import "../../styles/Footer.css";
-import logoSpresso from "../img/logoSpresso.png";
-import linkedin from "../img/linkedin.png";
-import instagram from "../img/instagram.png";
+import "./Footer.css";
+import logoSpresso from "../../img/logoSpresso.png";
+import linkedin from "../../img/linkedin.png";
+import instagram from "../../img/instagram.png";
 
 function Footer() {
   return (

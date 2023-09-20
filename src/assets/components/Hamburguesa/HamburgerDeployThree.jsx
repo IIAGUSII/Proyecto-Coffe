@@ -1,4 +1,4 @@
-import "../../styles/HamburgerDeployThree.css";
+import "./HamburgerDeployThree.css";
 
 function HamburgerDeployThree() {
   return (
