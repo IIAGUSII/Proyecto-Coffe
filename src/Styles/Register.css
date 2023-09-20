@@ -56,6 +56,7 @@
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(4, auto);
   justify-content: center;
+  margin-left: 2px;
 }
 .date {
   padding-left: 1rem;
@@ -108,7 +109,7 @@
 .button_form {
   display: flex;
   justify-content: center;
-  margin-right: 4rem;
+  margin-right: 2rem;
 }
 ::placeholder {
   color: rgb(255, 255, 255);

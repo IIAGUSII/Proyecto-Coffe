@@ -30,12 +30,12 @@ return(
            required/>
           </label>
           
-          <label className="label_email" htmlFor="email">
+          <label className="label_email" htmlFor="email-register">
            <input
             placeholder="Ingrese su email..."
             className="inputs_form"
             type="text"
-            id="email"
+            id="email-register"
             name="email"
             required/>
           </label>

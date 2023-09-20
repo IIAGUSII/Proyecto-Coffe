@@ -9,6 +9,9 @@
   background-image: url(../assets/img/back_form.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 50px 50px;
+  background-size: 100% 100%;
+  height: 320px;
   overflow: hidden;
   
 }
@@ -17,7 +20,8 @@
   background-color: #00000060;
   display: flex;
   justify-content: center;
-  
+  align-items: center;
+  height: 320px;
  
 }
 
