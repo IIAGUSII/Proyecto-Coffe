@@ -50,7 +50,8 @@ function AllProducts() {
     ? [...apiData].sort((a, b) => b.price - a.price)
     : apiData;
 
-  const productsToShow = sortedProducts.slice(startIndex, endIndex);
+  const productsToShow = sortedProducts.filter((prod)=>prod.name .toLocaleLowerCase()
+  .includes(searchText.toLocaleLowerCase())).slice(startIndex, endIndex);
 
   const goToPreviousPage = () => {
     if (currentPage > 1) {
