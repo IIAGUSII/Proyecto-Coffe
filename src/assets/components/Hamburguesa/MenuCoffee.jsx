@@ -1,6 +1,6 @@
 import "./MenuCoffee.css";
 import { Link } from "react-router-dom";
-import Banner from "../Banner/Banner";
+
 function MenuCoffee() {
   return (
     <>
