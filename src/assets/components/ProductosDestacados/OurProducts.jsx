@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import "./Section-products.css";
 import Product from "./product";
+import { UserContext } from "../../../../ProductsContext.jsx";
 
-import { UserContext } from "../../../../UserContext";
 function OurProducts() {
   const { apiData, isHambur } = useContext(UserContext);
 

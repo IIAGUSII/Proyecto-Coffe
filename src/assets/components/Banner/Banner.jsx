@@ -2,8 +2,9 @@ import "./MainBanner.css";
 import SearchBar from "../BarraDeBusqueda/SearchBar";
 import TextsBanner from "./TextsBanner";
 import { useContext } from "react";
-import { UserContext } from "../../../../UserContext";
+import { UserContext } from "../../../../ProductsContext.jsx";
 import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy";
+
 function Banner() {
   const { isHambur } = useContext(UserContext);
   return (
