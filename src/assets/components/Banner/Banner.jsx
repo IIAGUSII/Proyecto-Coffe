@@ -1,8 +1,8 @@
 import "../../styles/MainBanner.css";
-import SearchBar from "./SearchBar";
+import SearchBar from "../BarraDeBusqueda/SearchBar";
 import TextsBanner from "./TextsBanner";
 import { useContext } from "react";
-import { UserContext } from "../../../UserContext";
+import { UserContext } from "../../../../UserContext";
 import HamburgerDeploy from "./HamburgerDeploy";
 function Banner() {
   const { isHambur } = useContext(UserContext);

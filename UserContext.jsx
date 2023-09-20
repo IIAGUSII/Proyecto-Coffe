@@ -8,6 +8,7 @@ export const UserContextProvider = ({ children }) => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setApiData(data));
+      
   }, []);
 
   const [isHambur, setIsHambur] = useState(false);

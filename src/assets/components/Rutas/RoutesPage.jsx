@@ -3,7 +3,7 @@ import Form from "./FormContact";
 import Footer from "./Footer";
 import NoMatch from "./NoMatch";
 import AllProducts from "./AllProducts";
-import Main from "./Main";
+import Main from "../Main/MainHtml";
 import FilterCoffee from "./ProdCoffee";
 import ProdFood from "./ProdFood";
 import CoffeeMaker from "./ProdCoffeeMaker";
