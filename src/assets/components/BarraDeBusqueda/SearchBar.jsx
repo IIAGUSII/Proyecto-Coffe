@@ -1,7 +1,7 @@
 import "../../styles/SearchBar.css";
-import SearchIcon from "./icons/searchIcon";
+import SearchIcon from "../icons/searchIcon";
 import { useContext } from "react";
-import { UserContext } from "../../../UserContext";
+import { UserContext } from "../../../../UserContext";
 function SearchBar() {
   const { handleChangeText  } = useContext(UserContext);
   return (

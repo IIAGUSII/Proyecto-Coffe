@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { useContext } from "react";
-import { UserContext } from "../../../UserContext";
+import { UserContext } from "../../../../UserContext";
 import ProductsDesign from "./ProdsDesign";
 import HamburgerDeploy from "./HamburgerDeploy";
-import SearchBar from "./SearchBar";
+import SearchBar from "../SearchBar";
 export default function ProdFood() {
   const idFilterFood = ["10", "11", "12", "13", "14"];
   const [products, setProducts] = useState([]);

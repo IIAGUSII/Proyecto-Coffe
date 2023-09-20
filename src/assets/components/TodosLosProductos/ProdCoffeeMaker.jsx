@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { useContext } from "react";
-import { UserContext } from "../../../UserContext";
+import { UserContext } from "../../../../UserContext";
 import ProductsDesign from "./ProdsDesign";
-import HamburgerDeploy from "./HamburgerDeploy";
-import SearchBar from "./SearchBar";
+import HamburgerDeploy from "./Hambur/HamburgerDeploy";
+import SearchBar from "../SearchBar";
 export default function CoffeeMaker() {
   const idFilterMakers = ["15", "16", "17", "18", "19", "20", "21", "22"];
   const [products, setProducts] = useState([]);

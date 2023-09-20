@@ -1,11 +1,11 @@
 import { useContext, useState } from "react";
 import Product from "./product";
 import "../../Styles/AllProducts.css";
-import { UserContext } from "../../../UserContext";
-import ArrowUp from "./icons/ArrowUp";
-import ArrowDown from "./icons/ArrowDown";
+import { UserContext } from "../../../../UserContext";
+import ArrowUp from "../icons/ArrowUp";
+import ArrowDown from "../icons/ArrowDown";
 import HamburgerDeploy from "./HamburgerDeploy";
-import SearchBar from "./SearchBar";
+import SearchBar from "../SearchBar";
 import ProductsDesign from "./ProdsDesign";
 
 const productsPerPage = 11;
