@@ -4,35 +4,67 @@ main {
   padding: 0.1%;
 }
 
-.all-products{
+.all-products {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  justify-content: center;
 }
 
-.products-h2-all-products{
+.products-h2-all-products {
   display: flex;
   width: 117px;
   height: 45px;
   padding: 5px 20px;
-  margin: 0 auto;
+
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-background: #E3CAA5;
-margin-top: 1.5rem;
+  background: #e3caa5;
+  margin-top: 1.5rem;
 }
 
-.all-products h2{
-  color: #FFF;
+.product-and-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  
+}
+
+.arrows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 5%;
+  position: absolute;
+  right: 0;
+  align-items: center;
+fill: #e3caa5;
+
+}
+
+.arrow-down {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.arrow-up {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.all-products h2 {
+  color: #fff;
   text-align: center;
   text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.35);
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-
-
 }
 
 .products {
@@ -40,19 +72,16 @@ margin-top: 1.5rem;
   flex-direction: column;
   align-items: center;
   gap: 2em;
-
 }
 
 .pages {
   display: flex;
   justify-content: space-between;
   align-items: center;
-margin-top: 15%;
-
+  margin-top: 15%;
 }
 
 .pages button {
- 
   background-color: #e3caa5;
   width: 75px;
   height: 40px;
@@ -69,8 +98,7 @@ margin-top: 15%;
   width: 40px;
   height: 40px;
   border-radius: 30px;
-justify-content: center;
+  justify-content: center;
   align-items: center;
   display: flex;
-
 }

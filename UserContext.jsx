@@ -14,6 +14,8 @@ export const UserContextProvider = ({ children }) => {
   const [isHamburCoffee, setIsHamburCoffee] = useState(true);
   const [isHamburCoffeeMaker, setIsHamburCoffeeMaker] = useState(true);
   const [searchText, setSearchText] = useState("");
+  const [isSortBottom, setIsSortBottom] = useState(false);
+  const [isSortUp, setIsSortUp] = useState(false);
 
   function resetHambur() {
     return (
@@ -37,7 +39,11 @@ export const UserContextProvider = ({ children }) => {
     isHamburCoffeeMaker,
     setIsHamburCoffeeMaker,
     handleChangeText,
-    searchText
+    searchText,
+    isSortBottom,
+    setIsSortBottom,
+    isSortUp,
+    setIsSortUp
   };
 
   return (
