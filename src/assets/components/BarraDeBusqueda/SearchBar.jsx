@@ -1,4 +1,4 @@
-import "../../styles/SearchBar.css";
+import "./SearchBar.css";
 import SearchIcon from "../icons/searchIcon";
 import { useContext } from "react";
 import { UserContext } from "../../../../UserContext";

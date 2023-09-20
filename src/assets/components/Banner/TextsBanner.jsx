@@ -1,4 +1,4 @@
-import "../../styles/TextsBanner.css";
+import "./textsBanner.css";
 
 function TextsBanner(){
     return(

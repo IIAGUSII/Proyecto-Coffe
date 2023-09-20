@@ -1,10 +1,10 @@
-import "../../styles/Register.css";
-import Banner from "./Banner";
+import "./Register.css";
+import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy";
 function Register() {
 
 return(
     <>
-<Banner></Banner>
+<HamburgerDeploy></HamburgerDeploy>
      <article className="main_register">
       <section className="form_register">
        <div className="form">
