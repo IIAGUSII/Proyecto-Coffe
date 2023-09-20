@@ -1,4 +1,4 @@
-import "../../Styles/ProdCoffee.css";
+import "./ProdCoffee.css";
 import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { UserContext } from "../../../../ProductsContext.jsx";
