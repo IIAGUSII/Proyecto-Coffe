@@ -5,8 +5,8 @@
   margin: 0;
 }
 
-body{
-    background: #201520;
+body {
+  background: #201520;
 }
 
 .containerProducts {
@@ -16,7 +16,7 @@ body{
   margin-bottom: 5%;
 }
 
-.search-bar-section{
+.search-bar-section {
   display: flex;
   justify-content: center;
   margin-top: 8%;
@@ -26,8 +26,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 184px;
-  height: 52px;
+  width: 117px;
+  height: 45px;
   border-radius: 10px;
   background: #e3caa5;
   margin: 0 auto;
@@ -87,4 +87,3 @@ body{
   padding: 1em;
   margin-left: 5%;
 }
-

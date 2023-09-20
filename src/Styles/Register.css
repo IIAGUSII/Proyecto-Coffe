@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
+
 }
 
 .main_register {
@@ -11,6 +10,8 @@
   background-size: 50px 50px;
   background-size: 100% 100%;
   overflow: hidden;
+  font-size: 12px;
+
 }
 
 .form_register {
@@ -22,7 +23,7 @@
 
 .form {
   display: flex;
-  margin-left: 20px;
+  margin-left: 50px;
   color: rgb(255, 255, 255);
 }
 
@@ -80,7 +81,7 @@
   grid-column: 2/3;
   margin-left: 1.5rem;
 }
-.other {
+.otherRegister {
   grid-row: 2/3;
   grid-column: 3/4;
   margin-left: 3rem;

@@ -2,25 +2,47 @@
   margin: 0;
   padding: 0;
   color: rgb(255, 255, 255);
-
+ 
 }
 
 .form_contact {
   background-image: url(../assets/img/back_form.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+  
 }
 
 .formulary {
   background-color: #00000060;
   display: flex;
+  justify-content: center;
+  
+ 
 }
 
 .form_name {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(4, auto);
+  grid-row-gap: 15%;
+ 
+  
+}
+#first_name{
+  grid-column: 4/5;
+  grid-row: 1/2;
+ 
+}
+#last_name{
+  grid-column: 11/12;
+  grid-row: 1/2;
+  margin-left:4px;
+}
+#email{
+  grid-column: 8/9;
+  grid-row: 2/3;
+  margin-left:-12px;
 }
 
 .inputs_form {
@@ -36,19 +58,35 @@
   text-align: center;
 }
 
-.input_mail {
-  margin: 10px;
-}
-
 .text_form {
-  display: flex;
-  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(8, 1f);
+  grid-template-rows: repeat(2, auto);
+  margin: 20px;
+}
+.text_form p{
+  grid-column:2/6;
+  grid-row: 1/2;
 }
 
 .radios_consult {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(3, auto);
   margin-bottom: 1rem;
+}
+.pay{
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.work{
+  grid-column: 9/10;
+  grid-row: 1/2;
+}
+.other{
+  grid-column: 14/15 ;
+  grid-row: 1/2 ;
+
 }
 
 .radios_consult p {
@@ -68,8 +106,10 @@
 }
 
 .button {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(2, auto);
+
 }
 
 .btn_form {
@@ -79,4 +119,7 @@
   border-radius: 80px;
   border: none;
   margin-bottom: 1em;
+  grid-column: 5/6;
+  grid-row: 1/2;
+  margin-left: -12px;
 }
