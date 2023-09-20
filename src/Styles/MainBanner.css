@@ -4,6 +4,8 @@
   background-image: url(../assets/img/backbanner.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 50px 50px;
+  background-size: 100% 100%;
 }
 
 .filter {
