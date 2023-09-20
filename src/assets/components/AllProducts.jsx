@@ -2,21 +2,55 @@ import { useContext, useState } from "react";
 import Product from "./product";
 import "../../Styles/AllProducts.css";
 import { UserContext } from "../../../UserContext";
-import Banner from "./Banner";
-import ProductsDesign from "./ProdsDesign";
+import ArrowUp from "./icons/ArrowUp";
+import ArrowDown from "./icons/ArrowDown";
 import HamburgerDeploy from "./HamburgerDeploy";
 import SearchBar from "./SearchBar";
+import ProductsDesign from "./ProdsDesign";
 
 const productsPerPage = 11;
 
 function AllProducts() {
-  const { apiData, searchText } = useContext(UserContext);
+  const {
+    apiData,
+    searchText,
+    isSortBottom,
+    setIsSortBottom,
+    isSortUp,
+    setIsSortUp,
+  } = useContext(UserContext);
+
+  // Función para ordenar los productos de menor a mayor precio
+  const sortAscending = () => {
+    setIsSortUp(true);
+    setIsSortBottom(false);
+  };
+
+  // Función para ordenar los productos de mayor a menor precio
+  const sortDescending = () => {
+    setIsSortUp(false);
+    setIsSortBottom(true);
+  };
+
+  // Función para restablecer el ordenamiento
+  const resetAllSort = () => {
+    setIsSortUp(false);
+    setIsSortBottom(false);
+  };
+
   const [currentPage, setCurrentPage] = useState(1);
 
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
 
-  const productsToShow = apiData.slice(startIndex, endIndex);
+  // Ordenar los productos según el estado de ordenamiento
+  const sortedProducts = isSortBottom
+    ? [...apiData].sort((a, b) => a.price - b.price)
+    : isSortUp
+    ? [...apiData].sort((a, b) => b.price - a.price)
+    : apiData;
+
+  const productsToShow = sortedProducts.slice(startIndex, endIndex);
 
   const goToPreviousPage = () => {
     if (currentPage > 1) {
@@ -25,21 +59,11 @@ function AllProducts() {
   };
 
   const goToNextPage = () => {
-    const totalPages = Math.ceil(apiData.length / productsPerPage);
+    const totalPages = Math.ceil(sortedProducts.length / productsPerPage);
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
     }
   };
-
-  const sortProducts = (products) => {
-    products.sort(function (a, b) {
-      if (a > b) return 1;
-      if (a < b) return -1;
-      return 0;
-    });
-  };
-
-  console.log(sortProducts);
 
   return (
     <main>
@@ -48,9 +72,16 @@ function AllProducts() {
         <SearchBar></SearchBar>
       </div>
       <section className="all-products">
-        <span className="products-h2-all-products">
-          <h2>PRODUCTOS</h2>
-        </span>
+        <div className="product-and-arrows">
+          <span className="products-h2-all-products">
+            <h2>PRODUCTOS</h2>
+          </span>
+          <span className="arrows">
+            <ArrowUp onClick={sortAscending}></ArrowUp>
+            <p onClick={resetAllSort}>Destacados</p>
+            <ArrowDown onClick={sortDescending}></ArrowDown>
+          </span>
+        </div>
         <div className="products">
           {productsToShow.map((product) => (
             <ProductsDesign product={product} key={product.id} />
