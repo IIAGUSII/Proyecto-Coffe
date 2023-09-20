@@ -1,7 +1,7 @@
-import Banner from "./Banner";
-import Opinions from "./Opinions";
-import OurProducts from "./OurProducts";
-import "../../styles/Main.css";
+import Banner from "../Banner/Banner";
+import Opinions from "../Opiniones/Opinions";
+import OurProducts from "../ProductosDestacados/OurProducts";
+import "./Main.css";
 
 function Main() {
   return (

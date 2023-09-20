@@ -1,7 +1,7 @@
 import "./Header.css";
 import Nav from "./Nav";
-import { useState } from "react";
-function Header(setHambur) {
+
+function Header() {
   return (
     <header className="section-header">
       <Nav></Nav>
