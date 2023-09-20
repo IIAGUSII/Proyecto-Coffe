@@ -34,7 +34,7 @@
 }
 
 .opinion_one {
-  display: flex;     
+  display: flex;
 }
 
 .text_opinion {
@@ -42,12 +42,10 @@
   border-radius: 5%;
   margin-left: 10px;
   padding: 5px;
-  font-family: "Inter", sans-serif;
 }
 
 .opinion_two {
   display: flex;
-
 }
 
 .text_two {
@@ -57,7 +55,6 @@
   padding: 5px;
   font-family: "Inter", sans-serif;
 }
-
 
 @media (min-width: 480px) {
   .text_opinion {

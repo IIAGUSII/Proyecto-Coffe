@@ -16,3 +16,9 @@
   justify-content: center;
   gap: 1em;
 }
+
+@media (min-width: 768px) {
+  .main-banner {
+    height: 320px;
+  }
+}

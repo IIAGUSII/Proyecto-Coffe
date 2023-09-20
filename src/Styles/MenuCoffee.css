@@ -53,3 +53,9 @@
   line-height: normal;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .menuCoffeContainer {
+    height: 320px;
+  }
+}

@@ -15,21 +15,23 @@ export default function CoffeeMaker() {
 
   return (
     <>
-<HamburgerDeploy></HamburgerDeploy>
-<div className="search-bar-section">
+      <HamburgerDeploy></HamburgerDeploy>
+      <div className="search-bar-section">
         <SearchBar></SearchBar>
       </div>
+      <div className="coffee-selection">
+        <h2>CAFETERAS</h2>
+      </div>
+
       <div className="containerProducts">
-  
-        <div className="coffee-selection">
-               
-          <h2>CAFETERAS</h2>
-          
-        </div>
         {apiData
-          .filter((apiData) => idFilterMakers.includes(apiData.id)&&apiData.name
-          .toLocaleLowerCase()
-          .includes(searchText.toLocaleLowerCase()))
+          .filter(
+            (apiData) =>
+              idFilterMakers.includes(apiData.id) &&
+              apiData.name
+                .toLocaleLowerCase()
+                .includes(searchText.toLocaleLowerCase())
+          )
           .map((apiData) => (
             <ProductsDesign product={apiData} key={apiData.id}></ProductsDesign>
           ))}

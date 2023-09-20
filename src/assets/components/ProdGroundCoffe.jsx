@@ -15,20 +15,22 @@ export default function GroundCoffee() {
 
   return (
     <>
-<HamburgerDeploy></HamburgerDeploy>
-<div className="search-bar-section">
+      <HamburgerDeploy></HamburgerDeploy>
+      <div className="search-bar-section">
         <SearchBar></SearchBar>
       </div>
+      <div className="coffee-selection">
+        <h2>CAFÉ MOLIDO</h2>
+      </div>
       <div className="containerProducts">
-      
-        <div className="coffee-selection">
-          <h2>CAFÉ MOLIDO</h2>
-        </div>
         {apiData
-          .filter((apiData) => idFilterGrounds.includes(apiData.id)&&
-          apiData.name
-            .toLocaleLowerCase()
-            .includes(searchText.toLocaleLowerCase()))
+          .filter(
+            (apiData) =>
+              idFilterGrounds.includes(apiData.id) &&
+              apiData.name
+                .toLocaleLowerCase()
+                .includes(searchText.toLocaleLowerCase())
+          )
           .map((apiData) => (
             <ProductsDesign product={apiData} key={apiData.id}></ProductsDesign>
           ))}

@@ -15,21 +15,22 @@ export default function ProdFood() {
 
   return (
     <>
-<HamburgerDeploy></HamburgerDeploy>
-<div className="search-bar-section">
+      <HamburgerDeploy></HamburgerDeploy>
+      <div className="search-bar-section">
         <SearchBar></SearchBar>
       </div>
+      <div className="coffee-selection">
+        <h2>COMIDAS</h2>
+      </div>
       <div className="containerProducts">
-        
-        <div className="coffee-selection">
-          
-          <h2>COMIDAS</h2>
-        </div>
         {apiData
-          .filter((apiData) => idFilterFood.includes(apiData.id)&&
-          apiData.name
-            .toLocaleLowerCase()
-            .includes(searchText.toLocaleLowerCase()))
+          .filter(
+            (apiData) =>
+              idFilterFood.includes(apiData.id) &&
+              apiData.name
+                .toLocaleLowerCase()
+                .includes(searchText.toLocaleLowerCase())
+          )
           .map((apiData) => (
             <ProductsDesign product={apiData} key={apiData.id}></ProductsDesign>
           ))}
