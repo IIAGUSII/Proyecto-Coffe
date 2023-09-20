@@ -29,12 +29,11 @@ function FilterCoffee() {
       <div className="search-bar-section">
         <SearchBar></SearchBar>
       </div>
+      <div className="coffee-selection">
+        <h2>CAFÉ</h2>
+        {}
+      </div>
       <div className="containerProducts">
-        <div className="coffee-selection">
-          <h2>CAFÉ</h2>
-          {}
-        </div>
-
         <button onClick={toggleProductsCold} className="cold-coffee">
           CAFÉS FRIOS
         </button>

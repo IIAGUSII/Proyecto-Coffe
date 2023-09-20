@@ -7,10 +7,10 @@ function Opinions() {
   console.log("holap");
   return (
     <section className="opinions">
+      <h2>OPINIONES</h2>
       <div className="opinions_container">
-        <h2>OPINIONES</h2>
         <OpinionOne></OpinionOne>
-       <OpinionTwo></OpinionTwo>
+        <OpinionTwo></OpinionTwo>
       </div>
     </section>
   );
