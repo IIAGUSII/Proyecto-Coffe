@@ -1,10 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { useContext } from "react";
-import { UserContext } from "../../../../UserContext";
+import { UserContext } from "../../../../ProductsContext.jsx";
 import ProductsDesign from "./ProdsDesign";
-import HamburgerDeploy from "./HamburgerDeploy";
-import SearchBar from "../SearchBar";
+import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy";
+import SearchBar from "../BarraDeBusqueda/SearchBar.jsx";
+
 export default function GroundCoffee() {
   const idFilterGrounds = ["23", "24", "25", "26", "27"];
   const [products, setProducts] = useState([]);

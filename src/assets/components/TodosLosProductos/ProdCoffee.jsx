@@ -1,10 +1,10 @@
 import "../../Styles/ProdCoffee.css";
 import { useEffect, useState } from "react";
 import { useContext } from "react";
-import { UserContext } from "../../../../UserContext";
+import { UserContext } from "../../../../ProductsContext.jsx";
 import ProductCoffee from "./ProdsDesign";
-import SearchBar from "../SearchBar";
-import HamburgerDeploy from "./HamburgerDeploy";
+import SearchBar from "../BarraDeBusqueda/SearchBar";
+import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy.jsx";
 
 function FilterCoffee() {
   const idFilterCold = ["1", "2", "3", "4"];

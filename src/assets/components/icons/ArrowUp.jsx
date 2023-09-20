@@ -1,15 +1,17 @@
-import { UserContext } from "../../../../UserContext";
+import { UserContext } from "../../../../ProductsContext";
 import { useContext } from "react";
 
 function ArrowUp() {
-  const { isSortUp, setIsSortUp,isSortBottom, setIsSortBottom } = useContext(UserContext);
+  const { isSortUp, setIsSortUp, isSortBottom, setIsSortBottom } =
+    useContext(UserContext);
   function toggleSortUp() {
     setIsSortUp(true);
     setIsSortBottom(false);
   }
 
   return (
-    <svg onClick={toggleSortUp}
+    <svg
+      onClick={toggleSortUp}
       className="arrow-up"
       xmlns="http://www.w3.org/2000/svg"
       id="Layer_1"

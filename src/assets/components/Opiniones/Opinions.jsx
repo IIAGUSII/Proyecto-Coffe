@@ -1,4 +1,4 @@
-import "../../styles/Opinion.css";
+import "./Opinion.css";
 
 import OpinionOne from "./OpinionOne";
 import OpinionTwo from "./OpinionTwo";

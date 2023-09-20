@@ -1,12 +1,12 @@
 import { useContext, useState } from "react";
-import Product from "./product";
-import "../../Styles/AllProducts.css";
-import { UserContext } from "../../../../UserContext";
-import ArrowUp from "../icons/ArrowUp";
+import Product from "../ProductosDestacados/product.jsx";
+import "./AllProducts.css";
+import { UserContext } from "../../../../ProductsContext.jsx";
+import ArrowUp from "../icons/ArrowUp.jsx";
 import ArrowDown from "../icons/ArrowDown";
-import HamburgerDeploy from "./HamburgerDeploy";
-import SearchBar from "../SearchBar";
-import ProductsDesign from "./ProdsDesign";
+import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy.jsx";
+import SearchBar from "../BarraDeBusqueda/SearchBar.jsx";
+import ProductsDesign from "./ProdsDesign.jsx";
 
 const productsPerPage = 11;
 
@@ -50,8 +50,11 @@ function AllProducts() {
     ? [...apiData].sort((a, b) => b.price - a.price)
     : apiData;
 
-  const productsToShow = sortedProducts.filter((prod)=>prod.name .toLocaleLowerCase()
-  .includes(searchText.toLocaleLowerCase())).slice(startIndex, endIndex);
+  const productsToShow = sortedProducts
+    .filter((prod) =>
+      prod.name.toLocaleLowerCase().includes(searchText.toLocaleLowerCase())
+    )
+    .slice(startIndex, endIndex);
 
   const goToPreviousPage = () => {
     if (currentPage > 1) {

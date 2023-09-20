@@ -1,16 +1,15 @@
-import { UserContext } from "../../../../UserContext";
+import { UserContext } from "../../../../ProductsContext";
 import { useContext } from "react";
 function Hambur() {
-  const {isHambur, setIsHambur, resetHambur } = useContext(UserContext);
+  const { isHambur, setIsHambur, resetHambur } = useContext(UserContext);
   function toggleHamburger() {
-    setIsHambur(!isHambur)
+    setIsHambur(!isHambur);
   }
   return (
     <svg
-      onClick={()=>{
-        toggleHamburger()
-        resetHambur() 
-
+      onClick={() => {
+        toggleHamburger();
+        resetHambur();
       }}
       className="hambur-icon"
       xmlns="http://www.w3.org/2000/svg"

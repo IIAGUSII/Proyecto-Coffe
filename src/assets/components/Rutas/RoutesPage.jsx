@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Form from "./FormContact";
-import Footer from "./Footer";
+import Form from "../Formularios/FormContact.jsx";
+import Footer from "../Footer/Footer.jsx";
 import NoMatch from "./NoMatch";
-import AllProducts from "./AllProducts";
+import AllProducts from "../TodosLosProductos/AllProducts";
 import Main from "../Main/MainHtml";
-import FilterCoffee from "./ProdCoffee";
-import ProdFood from "./ProdFood";
-import CoffeeMaker from "./ProdCoffeeMaker";
-import GroundCoffee from "./ProdGroundCoffe";
-import Register from "./Register";
+import FilterCoffee from "../TodosLosProductos/ProdCoffee.jsx";
+import ProdFood from "../TodosLosProductos/ProdFood.jsx";
+import CoffeeMaker from "../TodosLosProductos/ProdCoffeeMaker.jsx";
+import GroundCoffee from "../TodosLosProductos/ProdGroundCoffe.jsx";
+import Register from "../Formularios/Register.jsx";
 
 function RoutesPage() {
   return (

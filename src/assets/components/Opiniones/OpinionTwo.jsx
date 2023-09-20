@@ -1,4 +1,4 @@
-import señoritaTaylor from "../img/señoritaTaylor.webp";
+import señoritaTaylor from "../../img/señoritaTaylor.webp";
 
 function OpinionTwo() {
   return (

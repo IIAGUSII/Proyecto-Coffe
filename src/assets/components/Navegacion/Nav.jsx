@@ -4,7 +4,7 @@ import Shop from "../icons/Shop";
 import imagen1 from "../../assets/img/logocodespresso2.png";
 import { useState } from "react";
 import { useContext } from "react";
-import { UserContext } from "../../../../UserContext";
+import { UserContext } from "../../../../ProductsContext";
 import HamburgerDeploy from "./HamburgerDeploy";
 function Nav(setHambur) {
   const { isHambur } = useContext(UserContext);
@@ -18,7 +18,6 @@ function Nav(setHambur) {
         </div>
         <Shop></Shop>
       </nav>
-      
     </>
   );
 }

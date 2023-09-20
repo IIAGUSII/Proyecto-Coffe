@@ -1,4 +1,4 @@
-import señoritoAndrew from "../img/señoritoAndrew.webp";
+import señoritoAndrew from "../../img/señoritoAndrew.webp";
 
 function OpinionOne() {
   return (

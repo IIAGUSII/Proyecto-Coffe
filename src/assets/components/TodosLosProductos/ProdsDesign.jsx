@@ -1,4 +1,4 @@
-import "../../Styles/ProdsDesign.css";
+import "./ProdsDesign.css";
 import Dolar from "../icons/Dolar";
 
 function ProductsDesign({ product }) {

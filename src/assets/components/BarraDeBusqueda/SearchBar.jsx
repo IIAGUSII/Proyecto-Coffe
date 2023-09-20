@@ -1,14 +1,14 @@
 import "../../styles/SearchBar.css";
 import SearchIcon from "../icons/searchIcon";
 import { useContext } from "react";
-import { UserContext } from "../../../../UserContext";
+import { UserContext } from "../../../../ProductsContext";
 function SearchBar() {
-  const { handleChangeText  } = useContext(UserContext);
+  const { handleChangeText } = useContext(UserContext);
   return (
     <form className="form_search">
       <div className="filter-search">
         <input
-        onChange={ handleChangeText }
+          onChange={handleChangeText}
           className=""
           type="search"
           name="search"
