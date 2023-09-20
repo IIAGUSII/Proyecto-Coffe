@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 
-.home-icon  {
+.home-icon {
   width: 25px;
   height: 25px;
   fill: #e3caa5;
@@ -73,4 +73,10 @@
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .hamburger-deploy {
+    height: 320px;
+  }
 }

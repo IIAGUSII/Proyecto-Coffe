@@ -55,3 +55,18 @@
   padding: 5px;
   font-family: "Inter", sans-serif;
 }
+
+@media (min-width: 768px) {
+  /* .opinions_container {
+  } */
+
+  .text_opinion {
+    padding: 15px;
+    border-radius: 30px;
+  }
+
+  .text_two {
+    padding: 15px;
+    border-radius: 30px;
+  }
+}
