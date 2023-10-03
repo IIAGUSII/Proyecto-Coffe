@@ -12,7 +12,7 @@
   justify-content: space-around;
   margin: 0 auto;
   margin-top: 8%;
-  gap: 2em;
+  gap: 2.5rem;
 width: 90%;
 align-items: center;
 
@@ -30,7 +30,17 @@ width: 90%;
   font-weight: 700;
   line-height: normal;
   margin-top: 10;
-
+  text-decoration: underline;
 
   font-family: "Playfair Display", serif;
+}
+
+@media (min-width: 480px) {
+  .our-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
 }

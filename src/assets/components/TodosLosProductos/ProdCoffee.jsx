@@ -1,5 +1,5 @@
 import "./ProdCoffee.css";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import { useContext } from "react";
 import { UserContext } from "../../../../ProductsContext.jsx";
 import ProductCoffee from "./ProdsDesign";
@@ -31,13 +31,13 @@ function FilterCoffee() {
       </div>
       <div className="coffee-selection">
         <h2>CAFÉ</h2>
-        {}
+  
       </div>
       <div className="containerProducts">
         <button onClick={toggleProductsCold} className="cold-coffee">
           CAFÉS FRIOS
         </button>
-
+      <div className="products-coffee-section">
         {isProductsCold
           ? apiData
               .filter(
@@ -54,9 +54,11 @@ function FilterCoffee() {
                 ></ProductCoffee>
               ))
           : null}
+          </div>
         <button onClick={toggleProductsHot} className="hot-coffee">
           CAFÉS CALIENTES
         </button>
+        <div className="products-coffee-section">
         {isProductsHot
           ? apiData
               .filter(
@@ -73,6 +75,7 @@ function FilterCoffee() {
                 ></ProductCoffee>
               ))
           : null}
+          </div>
       </div>
     </>
   );

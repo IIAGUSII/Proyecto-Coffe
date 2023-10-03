@@ -22,7 +22,7 @@ export default function ProdFood() {
       <div className="coffee-selection">
         <h2>COMIDAS</h2>
       </div>
-      <div className="containerProducts">
+      <div className="containerFoodProducts">
         {apiData
           .filter(
             (apiData) =>

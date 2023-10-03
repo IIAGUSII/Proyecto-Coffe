@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Playfair+Display:wght@500&display=swap");
 
+.cardContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  box-sizing: border-box;
+
+}
+
 .rectangleContainer {
   width: 180px;
   height: 179.2px;
@@ -11,6 +19,7 @@
   align-items: center;
   border-radius: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
 }
 
 .rectangleContainer img {
@@ -38,7 +47,7 @@
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
-  margin-top: 5%;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

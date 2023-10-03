@@ -23,7 +23,7 @@ export default function CoffeeMaker() {
         <h2>CAFETERAS</h2>
       </div>
 
-      <div className="containerProducts">
+      <div className="container-products">
         {apiData
           .filter(
             (apiData) =>

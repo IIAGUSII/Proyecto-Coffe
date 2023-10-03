@@ -4,7 +4,7 @@ import Product from "./product";
 import { UserContext } from "../../../../ProductsContext.jsx";
 
 function OurProducts() {
-  const { apiData, isHambur } = useContext(UserContext);
+  const { apiData} = useContext(UserContext);
 
   // console.log(apiData);
 

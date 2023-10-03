@@ -40,14 +40,14 @@ function HamburgerDeploy() {
 
             <div className="selectorHambur">
               <button onClick={toggleCoffeeMenu} className="buttonHambur">
-                MENÚ COFFEE
+                Menú Coffee
               </button>
 
               <button onClick={toggleCoffeeMaker} className="buttonHambur">
-                CAFETERAS/CAFÉ MOLIDO
+                Cafeteras & Cafe Molido
               </button>
               <Link to="/products">
-                <button className="buttonHambur">PRODUCTOS</button>
+                <button className="buttonHambur">Productos</button>
               </Link>
             </div>
 
@@ -56,7 +56,7 @@ function HamburgerDeploy() {
                 <Home></Home>
               </Link>
               <Link to="/registro">
-                <button className="registerHambur">REGISTRO</button>
+                <button className="registerHambur">Registro</button>
               </Link>
             </div>
           </div>

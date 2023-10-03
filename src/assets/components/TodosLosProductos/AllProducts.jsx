@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import Product from "../ProductosDestacados/product.jsx";
 import "./AllProducts.css";
 import { UserContext } from "../../../../ProductsContext.jsx";
@@ -18,32 +18,15 @@ function AllProducts() {
     setIsSortBottom,
     isSortUp,
     setIsSortUp,
+    setSearchText,
   } = useContext(UserContext);
-
-  // Función para ordenar los productos de menor a mayor precio
-  const sortAscending = () => {
-    setIsSortUp(true);
-    setIsSortBottom(false);
-  };
-
-  // Función para ordenar los productos de mayor a menor precio
-  const sortDescending = () => {
-    setIsSortUp(false);
-    setIsSortBottom(true);
-  };
-
-  // Función para restablecer el ordenamiento
-  const resetAllSort = () => {
-    setIsSortUp(false);
-    setIsSortBottom(false);
-  };
 
   const [currentPage, setCurrentPage] = useState(1);
 
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
 
-  // Ordenar los productos según el estado de ordenamiento
+
   const sortedProducts = isSortBottom
     ? [...apiData].sort((a, b) => a.price - b.price)
     : isSortUp
@@ -55,6 +38,24 @@ function AllProducts() {
       prod.name.toLocaleLowerCase().includes(searchText.toLocaleLowerCase())
     )
     .slice(startIndex, endIndex);
+
+
+  const sortAscending = () => {
+    setIsSortUp(true);
+    setIsSortBottom(false);
+  };
+
+  const sortDescending = () => {
+    setIsSortUp(false);
+    setIsSortBottom(true);
+  };
+
+
+  const resetAllSort = () => {
+    setIsSortUp(false);
+    setIsSortBottom(false);
+    setSearchText("");
+  };
 
   const goToPreviousPage = () => {
     if (currentPage > 1) {

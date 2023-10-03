@@ -2,7 +2,7 @@ import { UserContext } from "../../../../ProductsContext";
 import { useContext } from "react";
 
 function ArrowDown() {
-  const { isSortBottom, setIsSortBottom, setIsSortUp, IsSortUp } =
+  const {setIsSortBottom, setIsSortUp} =
     useContext(UserContext);
   function toggleSortBottom() {
     setIsSortUp(false);

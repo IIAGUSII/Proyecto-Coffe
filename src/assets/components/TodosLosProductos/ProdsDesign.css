@@ -14,7 +14,33 @@ body {
   flex-direction: column;
   gap: 2.5em;
   margin-bottom: 5%;
+  margin-top: 5%
 }
+
+
+.containerFoodProducts{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 2.5em;
+  margin-bottom: 5%;
+  margin-top: 5%
+}
+
+
+.container-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 2.5em;
+  margin-bottom: 5%;
+  margin-top: 5%
+}
+
 
 .search-bar-section {
   display: flex;
@@ -46,6 +72,7 @@ body {
 }
 
 .cold-coffee {
+  margin-top: 10%;
   width: 131px;
   height: 45px;
   border-radius: 10px;
@@ -90,15 +117,37 @@ body {
   margin-left: 5%;
 }
 
-@media (min-width: 768px) {
-  .containerProducts {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.products-coffee-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
 
-  .coffee-selection {
-    margin-bottom: 5%;
+@media (min-width: 480px) {
+  .products-coffee-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
+
+@media (min-width: 480px) {
+  .container-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 480px) {
+  .containerFoodProducts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+

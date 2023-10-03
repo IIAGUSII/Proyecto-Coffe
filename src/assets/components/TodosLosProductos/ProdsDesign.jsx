@@ -3,7 +3,7 @@ import Dolar from "../icons/Dolar";
 
 function ProductsDesign({ product }) {
   return (
-    <article>
+    <article className="cardContainer">
       <div className="rectangleContainer">
         <img src={product.photo} alt="" />
         <h3>{product.name}</h3>

@@ -41,6 +41,7 @@ export const UserContextProvider = ({ children }) => {
     setIsHamburCoffeeMaker,
     handleChangeText,
     searchText,
+    setSearchText,
     isSortBottom,
     setIsSortBottom,
     isSortUp,

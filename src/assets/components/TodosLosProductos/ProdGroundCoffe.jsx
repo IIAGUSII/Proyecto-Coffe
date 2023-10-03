@@ -23,7 +23,7 @@ export default function GroundCoffee() {
       <div className="coffee-selection">
         <h2>CAFÉ MOLIDO</h2>
       </div>
-      <div className="containerProducts">
+      <div className="container-products">
         {apiData
           .filter(
             (apiData) =>
