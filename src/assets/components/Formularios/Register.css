@@ -4,10 +4,7 @@
 }
 
 .main_register {
-  background-image: url(../../img/back_form.jpg);
-  background-repeat: no-repeat;
-  background-size: 50px 50px;
-  background-size: 100% 100%;
+  background-color: #1d2127;
   overflow: hidden;
   font-size: 12px;
 }
@@ -16,7 +13,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #00000060;
 }
 
 .form {

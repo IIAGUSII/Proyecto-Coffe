@@ -1,6 +1,6 @@
 main {
   margin: 0 auto;
-  background-color: #201520;
+  background-color: #1d2127;
   padding: 0.1%;
 }
 
@@ -30,7 +30,6 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
-  
 }
 
 .arrows {
@@ -41,8 +40,7 @@ main {
   position: absolute;
   right: 0;
   align-items: center;
-fill: #e3caa5;
-
+  fill: #e3caa5;
 }
 
 .arrow-down {

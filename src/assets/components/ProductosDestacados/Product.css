@@ -2,22 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 
 .product {
-  background: rgba(0, 0, 0, 0.1);
-
-  width: 126px;
-  height: 193px;
+  /* background: rgba(0, 0, 0, 0.1); */
+  background-color: #454545;
+  width: 145px;
+  height: 241px;
   display: flex;
   border-radius: 20px;
+  padding-top: 16px;
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .product img {
-  width: 108px;
-  height: 104px;
+  width: 123px;
+  height: 122px;
   border-radius: 20px;
-  margin-top: 16px;
 }
 
 .product-name {
@@ -39,20 +39,33 @@
   height: 100%;
 }
 
+.product-add {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  fill: #e3caa5;
+}
+
+.product-add img {
+  width: 25px;
+  height: 25px;
+  border-radius: 0;
+}
+
 .rectangle {
-  width: 91px;
-  height: 19.841px;
+  width: 63px;
+  height: 24px;
   background: rgba(217, 217, 217, 0.25);
-  border-radius: 32px;
+  border-radius: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  stroke: #e3caa5;
 }
 
 .dolar {
   fill: #e3caa5;
   width: 16px;
-  height: 16px;
   margin-right: 5px;
 }
 

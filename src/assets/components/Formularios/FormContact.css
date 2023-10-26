@@ -5,17 +5,11 @@
 }
 
 .form_contact {
-  background-image: url(../../img/back_form.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 50px 50px;
-  background-size: 100% 100%;
-  height: 320px;
+  background-color: #1d2127;
   overflow: hidden;
 }
 
 .formulary {
-  background-color: #00000060;
   display: flex;
   justify-content: center;
   align-items: center;
