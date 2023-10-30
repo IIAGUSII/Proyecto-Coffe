@@ -45,21 +45,28 @@ footer {
 }
 
 .btn_link {
-  width: 115px;
-  height: 21px;
-  border-radius: 10px;
-  overflow: hidden;
+  width: 134px;
+  height: 35px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .btn_link button {
   width: 100%;
   height: 100%;
-  font-size: 12px;
-  font-weight: bold;
+  color: white;
+  cursor: pointer;
   outline: none;
   border: none;
-  background-color: #e3caa5;
-  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid #b29e80;
+}
+
+.btn_link button:hover {
+  background-color: #b29e80;
+  color: #000000;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.582);
 }
 
 .imgs_footer {

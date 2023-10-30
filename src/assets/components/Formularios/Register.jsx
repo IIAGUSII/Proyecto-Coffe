@@ -73,11 +73,13 @@ function Register() {
                   <input className="" name="gender" type="radio" />
                 </label>
               </div>
-              <div className="button_form">
-                <button className="btn_form" type="submit">
-                  Registrarse
-                </button>
-              </div>
+              <section className="button_all">
+                <div className="button_form">
+                  <button className="button_register" type="submit">
+                    Registrarse
+                  </button>
+                </div>
+              </section>
             </form>
           </div>
         </section>

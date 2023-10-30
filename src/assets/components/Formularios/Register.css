@@ -13,15 +13,16 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .form {
   display: flex;
-  margin-left: 50px;
   color: rgb(255, 255, 255);
 }
 
 .form_person {
+  margin-left: 25px;
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(4, auto);
@@ -100,22 +101,35 @@
   border: none;
 }
 
-.button_form {
-  display: flex;
-  justify-content: center;
-  margin-right: 2rem;
-}
 ::placeholder {
   color: rgb(255, 255, 255);
   text-align: center;
 }
 
-.btn_form {
-  background-color: #e3caa5;
-  width: 110px;
-  height: 25px;
-  border-radius: 80px;
-  border: none;
+.button_all {
+  display: flex;
   color: rgb(255, 255, 255);
-  margin-bottom: 1em;
+  justify-content: center;
+}
+
+.button_form {
+  display: flex;
+  justify-content: center;
+  width: 134px;
+  height: 35px;
+}
+
+.button_form button {
+  color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 80px;
+  border: 2px solid #b29e80;
+  background-color: transparent;
+}
+
+.button_form button:hover {
+  background-color: #b29e80;
+  color: #000000;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.582);
 }
