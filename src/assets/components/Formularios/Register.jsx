@@ -52,26 +52,32 @@ function Register() {
                   />
                 </label>
               </div>
-
-              <label className="label_date" htmlFor="date">
-                Fecha de nacimiento
-                <input className="inputs_form date" name="date" type="date" />
-              </label>
-              <div className="gender_div">
-                <legend className="gender">Genero</legend>
-                <label className="input_gender man" htmlFor="gender">
-                  <p>Hombre</p>
-                  <input className="" name="gender" type="radio" />
+              <section className="date_all">
+                <label className="label_date" htmlFor="date">
+                  Fecha de nacimiento
+                  <input className="inputs_form date" name="date" type="date" />
                 </label>
-                <label className="input_gender woman" htmlFor="gender">
-                  <p className="">Mujer</p>
-                  <input className="" name="gender" type="radio" />
-                </label>
-                <label className="input_gender otherRegister" htmlFor="gender">
-                  <p>Otro</p>
-                  <input className="" name="gender" type="radio" />
-                </label>
-              </div>
+              </section>
+              <section className="gender_all">
+                <div className="gender_div">
+                  <legend className="gender">Genero</legend>
+                  <label className="input_gender man" htmlFor="gender">
+                    <p>Hombre</p>
+                    <input className="" name="gender" type="radio" />
+                  </label>
+                  <label className="input_gender woman" htmlFor="gender">
+                    <p className="">Mujer</p>
+                    <input className="" name="gender" type="radio" />
+                  </label>
+                  <label
+                    className="input_gender otherRegister"
+                    htmlFor="gender"
+                  >
+                    <p>Otro</p>
+                    <input className="" name="gender" type="radio" />
+                  </label>
+                </div>
+              </section>
               <section className="button_all">
                 <div className="button_form">
                   <button className="button_register" type="submit">
