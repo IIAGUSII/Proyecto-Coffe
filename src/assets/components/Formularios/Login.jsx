@@ -1,9 +1,8 @@
 import "./Login.css";
-import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy";
+
 function Login() {
   return (
     <>
-      <HamburgerDeploy></HamburgerDeploy>
       <section className="form_login">
         <div className="all_formulary">
           <form action="process_login" method="post">

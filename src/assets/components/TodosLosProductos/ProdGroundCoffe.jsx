@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useContext } from "react";
 import { UserContext } from "../../../../ProductsContext.jsx";
 import ProductsDesign from "./ProdsDesign";
-import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy";
 import SearchBar from "../BarraDeBusqueda/SearchBar.jsx";
 
 export default function GroundCoffee() {
@@ -16,7 +15,6 @@ export default function GroundCoffee() {
 
   return (
     <>
-      <HamburgerDeploy></HamburgerDeploy>
       <div className="search-bar-section">
         <SearchBar></SearchBar>
       </div>

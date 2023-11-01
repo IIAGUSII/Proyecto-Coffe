@@ -1,8 +1,6 @@
 import { useRef } from "react";
 import "./FormContact.css";
 
-import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy";
-
 function Form() {
   const name = useRef();
   const surname = useRef();
@@ -17,7 +15,6 @@ function Form() {
 
   return (
     <>
-      <HamburgerDeploy></HamburgerDeploy>
       <section className="form_contact">
         <div className="formulary">
           <form onSubmit={handleSubmit}>

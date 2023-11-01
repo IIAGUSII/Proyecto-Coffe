@@ -4,7 +4,6 @@ import { useContext } from "react";
 import { UserContext } from "../../../../ProductsContext.jsx";
 import ProductCoffee from "./ProdsDesign";
 import SearchBar from "../BarraDeBusqueda/SearchBar";
-import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy.jsx";
 
 function FilterCoffee() {
   const idFilterCold = ["1", "2", "3", "4"];
@@ -25,7 +24,6 @@ function FilterCoffee() {
 
   return (
     <>
-      <HamburgerDeploy></HamburgerDeploy>
       <div className="search-bar-section">
         <SearchBar></SearchBar>
       </div>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { UserContext } from "../../../../ProductsContext.jsx";
 import ProductsDesign from "./ProdsDesign";
-import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy.jsx";
+
 import SearchBar from "../BarraDeBusqueda/SearchBar.jsx";
 export default function CoffeeMaker() {
   const idFilterMakers = ["15", "16", "17", "18", "19", "20", "21", "22"];
@@ -15,7 +15,6 @@ export default function CoffeeMaker() {
 
   return (
     <>
-      <HamburgerDeploy></HamburgerDeploy>
       <div className="search-bar-section">
         <SearchBar></SearchBar>
       </div>

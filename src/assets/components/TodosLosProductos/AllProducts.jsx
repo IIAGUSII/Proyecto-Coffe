@@ -4,7 +4,7 @@ import "./AllProducts.css";
 import { UserContext } from "../../../../ProductsContext.jsx";
 import ArrowUp from "../icons/ArrowUp.jsx";
 import ArrowDown from "../icons/ArrowDown";
-import HamburgerDeploy from "../Hamburguesa/HamburgerDeploy.jsx";
+
 import SearchBar from "../BarraDeBusqueda/SearchBar.jsx";
 import ProductsDesign from "./ProdsDesign.jsx";
 
@@ -71,7 +71,6 @@ function AllProducts() {
 
   return (
     <main>
-      <HamburgerDeploy></HamburgerDeploy>
       <div className="search-bar-section">
         <SearchBar></SearchBar>
       </div>
