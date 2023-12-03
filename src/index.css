@@ -5,4 +5,34 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  /* outline: 0.4px solid red; */
+}
+main {
+  padding-top: 9vh;
+}
+
+body {
+  position: relative;
+  background: #1d2127;
+}
+
+/* Estilo para el scroll principal */
+body::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+}
+
+/* Track del scroll */
+body::-webkit-scrollbar-track {
+  background-color: transparent; /* Color transparente del track del scrollbar */
+}
+
+/* Handle del scroll */
+body::-webkit-scrollbar-thumb {
+  background-color: #e3caa5; /* Color del handle del scrollbar */
+  border-radius: 6px; /* Bordes redondeados del handle */
+}
+
+/* Esquinas del handle del scroll (opcional) */
+body::-webkit-scrollbar-corner {
+  background-color: transparent; /* Color transparente de las esquinas del handle del scrollbar */
 }

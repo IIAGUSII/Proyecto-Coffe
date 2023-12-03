@@ -6,7 +6,7 @@ import ProductsDesign from "./ProdsDesign";
 
 import SearchBar from "../BarraDeBusqueda/SearchBar.jsx";
 export default function CoffeeMaker() {
-  const idFilterMakers = ["15", "16", "17", "18", "19", "20", "21", "22"];
+  const idFilterMakers = ["Cafés molidos"];
   const [products, setProducts] = useState([]);
 
   console.log(products);
@@ -15,26 +15,31 @@ export default function CoffeeMaker() {
 
   return (
     <>
-      <div className="search-bar-section">
-        <SearchBar></SearchBar>
-      </div>
-      <div className="coffee-selection">
-        <h2>CAFETERAS</h2>
-      </div>
+      <main>
+        <div className="search-bar-section">
+          <SearchBar></SearchBar>
+        </div>
+        <div className="coffee-selection">
+          <h2>CAFETERAS</h2>
+        </div>
 
-      <div className="containerProducts">
-        {apiData
-          .filter(
-            (apiData) =>
-              idFilterMakers.includes(apiData.id) &&
-              apiData.name
-                .toLocaleLowerCase()
-                .includes(searchText.toLocaleLowerCase())
-          )
-          .map((apiData) => (
-            <ProductsDesign product={apiData} key={apiData.id}></ProductsDesign>
-          ))}
-      </div>
+        <div className="containerProducts">
+          {apiData
+            .filter(
+              (apiData) =>
+                idFilterMakers.includes(apiData.catalog) &&
+                apiData.name
+                  .toLocaleLowerCase()
+                  .includes(searchText.toLocaleLowerCase())
+            )
+            .map((apiData) => (
+              <ProductsDesign
+                product={apiData}
+                key={apiData.id}
+              ></ProductsDesign>
+            ))}
+        </div>
+      </main>
     </>
   );
 }

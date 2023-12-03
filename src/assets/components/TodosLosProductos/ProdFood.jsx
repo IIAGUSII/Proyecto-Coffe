@@ -3,37 +3,62 @@ import { useState } from "react";
 import { useContext } from "react";
 import { UserContext } from "../../../../ProductsContext.jsx";
 import ProductsDesign from "./ProdsDesign";
-
+import FilterAndOrder from "../FilterAndOrder/FilterAndOrder.jsx";
 import SearchBar from "../BarraDeBusqueda/SearchBar.jsx";
 export default function ProdFood() {
-  const idFilterFood = ["10", "11", "12", "13", "14"];
   const [products, setProducts] = useState([]);
 
-  console.log(products);
-  const { apiData, searchText } = useContext(UserContext);
-  console.log(apiData);
+  const { apiData, searchText, isApiQuery, apiSorted } =
+    useContext(UserContext);
 
+  const productsPerPage = 12;
+  console.log(apiData);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const startIndex = (currentPage - 1) * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+
+  const productsToShow = apiSorted.slice(startIndex, endIndex);
+  const goToPreviousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+  console.log(productsToShow);
+  const goToNextPage = () => {
+    const totalPages = Math.ceil(apiSorted.length / productsPerPage);
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
   return (
     <>
-      <div className="search-bar-section">
-        <SearchBar></SearchBar>
-      </div>
-      <div className="coffee-selection">
-        <h2>COMIDAS</h2>
-      </div>
-      <div className="containerProducts">
-        {apiData
-          .filter(
-            (apiData) =>
-              idFilterFood.includes(apiData.id) &&
-              apiData.name
-                .toLocaleLowerCase()
-                .includes(searchText.toLocaleLowerCase())
-          )
-          .map((apiData) => (
-            <ProductsDesign product={apiData} key={apiData.id}></ProductsDesign>
-          ))}
-      </div>
+      <main>
+        <section className="products-food-section">
+          <div className="search-bar-section">
+            <SearchBar></SearchBar>
+          </div>
+
+          <section className="container-products-food">
+            <div className="food-container">
+              {productsToShow.map((product) => (
+                <ProductsDesign
+                  product={product}
+                  key={product.id}
+                ></ProductsDesign>
+              ))}
+            </div>
+            <aside className="filter-section">
+              <FilterAndOrder api={isApiQuery}></FilterAndOrder>
+            </aside>
+          </section>
+          <div className="pages">
+            <button onClick={goToPreviousPage}>Anterior</button>
+            <span>{currentPage}</span>
+            <button onClick={goToNextPage}>Siguiente</button>
+          </div>
+        </section>
+      </main>
     </>
   );
 }

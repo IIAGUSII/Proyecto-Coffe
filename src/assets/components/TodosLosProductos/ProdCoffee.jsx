@@ -6,8 +6,8 @@ import ProductCoffee from "./ProdsDesign";
 import SearchBar from "../BarraDeBusqueda/SearchBar";
 
 function FilterCoffee() {
-  const idFilterCold = ["1", "2", "3", "4"];
-  const idFilterHot = ["5", "6", "7", "8", "9"];
+  const idFilterCold = ["Bebida fría"];
+  const idFilterHot = ["Bebida caliente"];
   const [products, setProducts] = useState([]);
   const [isProductsCold, setIsProductsCold] = useState(false);
   const [isProductsHot, setIsProductsHot] = useState(false);
@@ -24,54 +24,56 @@ function FilterCoffee() {
 
   return (
     <>
-      <div className="search-bar-section">
-        <SearchBar></SearchBar>
-      </div>
-      <div className="coffee-selection">
-        <h2>CAFÉ</h2>
-        {}
-      </div>
-      <div className="containerProducts">
-        <button onClick={toggleProductsCold} className="cold-coffee">
-          CAFÉS FRIOS
-        </button>
+      <main>
+        <div className="search-bar-section">
+          <SearchBar></SearchBar>
+        </div>
+        <div className="coffee-selection">
+          <h2>CAFÉ</h2>
+          {}
+        </div>
+        <div className="containerProducts">
+          <button onClick={toggleProductsCold} className="cold-coffee">
+            CAFÉS FRIOS
+          </button>
 
-        {isProductsCold
-          ? apiData
-              .filter(
-                (apiData) =>
-                  idFilterCold.includes(apiData.id) &&
-                  apiData.name
-                    .toLocaleLowerCase()
-                    .includes(searchText.toLocaleLowerCase())
-              )
-              .map((apiData) => (
-                <ProductCoffee
-                  product={apiData}
-                  key={apiData.id}
-                ></ProductCoffee>
-              ))
-          : null}
-        <button onClick={toggleProductsHot} className="hot-coffee">
-          CAFÉS CALIENTES
-        </button>
-        {isProductsHot
-          ? apiData
-              .filter(
-                (apiData) =>
-                  idFilterHot.includes(apiData.id) &&
-                  apiData.name
-                    .toLocaleLowerCase()
-                    .includes(searchText.toLocaleLowerCase())
-              )
-              .map((apiData) => (
-                <ProductCoffee
-                  product={apiData}
-                  key={apiData.id}
-                ></ProductCoffee>
-              ))
-          : null}
-      </div>
+          {isProductsCold
+            ? apiData
+                .filter(
+                  (apiData) =>
+                    idFilterCold.includes(apiData.catalog) &&
+                    apiData.name
+                      .toLocaleLowerCase()
+                      .includes(searchText.toLocaleLowerCase())
+                )
+                .map((apiData) => (
+                  <ProductCoffee
+                    product={apiData}
+                    key={apiData.id}
+                  ></ProductCoffee>
+                ))
+            : null}
+          <button onClick={toggleProductsHot} className="hot-coffee">
+            CAFÉS CALIENTES
+          </button>
+          {isProductsHot
+            ? apiData
+                .filter(
+                  (apiData) =>
+                    idFilterHot.includes(apiData.catalog) &&
+                    apiData.name
+                      .toLocaleLowerCase()
+                      .includes(searchText.toLocaleLowerCase())
+                )
+                .map((apiData) => (
+                  <ProductCoffee
+                    product={apiData}
+                    key={apiData.id}
+                  ></ProductCoffee>
+                ))
+            : null}
+        </div>
+      </main>
     </>
   );
 }

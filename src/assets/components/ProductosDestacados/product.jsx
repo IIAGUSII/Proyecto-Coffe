@@ -6,7 +6,7 @@ import Shop from "../icons/Shop";
 function Product({ product }) {
   return (
     <article className="product">
-      <img src={product.photo} alt="" />
+      <img src={product.picture} alt="" />
       <div className="rectangle-container">
         <h3 className="product-name">{product.name}</h3>
         <div className="rectangle">
