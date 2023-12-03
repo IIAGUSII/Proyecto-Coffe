@@ -49,7 +49,10 @@ export default function ProdFood() {
               ))}
             </div>
             <aside className="filter-section">
-              <FilterAndOrder api={isApiQuery}></FilterAndOrder>
+              <FilterAndOrder
+                api={isApiQuery}
+                isActive={false}
+              ></FilterAndOrder>
             </aside>
           </section>
           <div className="pages">

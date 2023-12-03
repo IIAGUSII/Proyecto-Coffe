@@ -120,7 +120,7 @@ function Admin() {
     }
     console.log(`Aca mati${JSON.stringify(product)}`);
   };
-
+  const token = localStorage.getItem("token");
   const editProduct = async (product) => {
     try {
       const response = await fetch(
@@ -128,6 +128,7 @@ function Admin() {
         {
           method: "PATCH",
           headers: {
+            Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
           },
           body: JSON.stringify(product),

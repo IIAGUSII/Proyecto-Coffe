@@ -1,16 +1,66 @@
+import { useState } from "react";
 import "./Register.css";
 
 function Register() {
+  const [name, setName] = useState()
+  const [email, setEmail] = useState()
+  const [password, setPassword] = useState()
+
+ // const name = useRef();
+  //const email = useRef();
+  //const password = useRef();
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch('http://localhost:3000/users/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        password: password,
+      }),
+    });
+
+    if (response.ok) {
+      console.log('Registro exitoso');
+    } else {
+      // Manejar errores en el registro
+      console.error('Error en el registro');
+    }
+  } catch (error) {
+    console.error('Error al conectarse con el servidor:', error);
+  }
+};
+
+
+  //const handleSubmit = (e) => {
+    // e.preventDefault();
+   // console.log(name.current.value);
+    // console.log(e.target.email.value);
+    // console.log(e.target.password.value);
+    // console.log(e.target.name.value);
+    //name.current.value = "";
+//  }
+
+
   return (
     <>
       <main>
         <article className="main_register">
           <section className="form_register">
             <div className="form">
-              <form action="process_contact" method="post">
+              <form onSubmit={handleSubmit} action="/register" method="POST">
                 <div className="form_person">
                   <label className="label_name" htmlFor="name">
                     <input
+                      //ref={name}
+                      value={name} 
+                      onChange={(e) => setName(e.target.value)}
                       placeholder="Ingrese su nombre..."
                       className="inputs_form"
                       type="text"
@@ -31,12 +81,15 @@ function Register() {
                     />
                   </label>
 
-                  <label className="label_email" htmlFor="email-register">
+                  <label className="label_email" htmlFor="email">
                     <input
+                     // ref={email}
+                     value={email} 
+                      onChange={(e) => setEmail(e.target.value)}
                       placeholder="Ingrese su email..."
                       className="inputs_form"
                       type="text"
-                      id="email-register"
+                      id="email"
                       name="email"
                       required
                     />
@@ -44,6 +97,9 @@ function Register() {
 
                   <label className="label_password" htmlFor="password">
                     <input
+                    //  ref={password}
+                    value={password} 
+                    onChange={(e) => setPassword(e.target.value)}
                       placeholder="ingrese su contraseña"
                       className="inputs_form"
                       type="password"
@@ -85,7 +141,7 @@ function Register() {
                 </section>
                 <section className="button_all">
                   <div className="button_form">
-                    <button className="button_register" type="submit">
+                    <button className="button_register" type="submit" value="save">
                       Registrarse
                     </button>
                   </div>

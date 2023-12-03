@@ -10,7 +10,7 @@ export const UserContextProvider = ({ children }) => {
   const urlQuery = `http://localhost:3000/products?catalog=${catalogName}`;
   // const urlQueryFood = `http://localhost:3000/products?catalog=${catalogName}`;
   // const urlDeleteParams = `http://localhost:3000/products/${idDelete}`;
-
+  const token = localStorage.getItem("token");
   useEffect(() => {
     fetch(urlQuery)
       .then((res) => res.json())
@@ -28,6 +28,7 @@ export const UserContextProvider = ({ children }) => {
         {
           method: "DELETE",
           headers: {
+            Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
           },
         }

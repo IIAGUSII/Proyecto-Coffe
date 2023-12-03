@@ -6,7 +6,7 @@ import OrderIconHigh from "../icons/orderIconHigh";
 
 import ResetIcon from "../icons/ResetIcon.jsx";
 import ArrowDownAdmin from "../icons/ArrowDownAdmin.jsx";
-function FilterAndOrder({ api }) {
+function FilterAndOrder({ api, isActive }) {
   const { setCatalogName, apiSorted, setApiSorted } = useContext(UserContext);
   const [isSortedUp, setIsSortedUp] = useState(false);
   const [isSortedDown, setIsSortedDown] = useState(false);
@@ -35,6 +35,7 @@ function FilterAndOrder({ api }) {
       ? [...api].sort((a, b) => b.price - a.price)
       : api;
     setApiSorted(sortedProducts);
+    console.log(apiSorted);
   }, [api, isSortedDown, isSortedUp, setApiSorted]);
 
   return (
@@ -51,12 +52,14 @@ function FilterAndOrder({ api }) {
           <ResetIcon></ResetIcon>
         </button>
       </div>
-      <button
-        onClick={() => setIsCatalogClicked(!isCatalogClicked)}
-        className="button-catalog"
-      >
-        Catalogo
-      </button>
+      {isActive ? (
+        <button
+          onClick={() => setIsCatalogClicked(!isCatalogClicked)}
+          className="button-catalog"
+        >
+          Catalogo
+        </button>
+      ) : null}
 
       <aside className={!isCatalogClicked ? "hidden" : "list-product-catalog"}>
         <ArrowDownAdmin></ArrowDownAdmin>
