@@ -8,20 +8,20 @@ import SearchBar from "../BarraDeBusqueda/SearchBar.jsx";
 export default function ProdFood() {
   const { isApiQuery, apiSorted, setCatalogName } = useContext(UserContext);
 
-  const productsPerPage = 12;
+  const productsPerPage = 10;
   const [currentPage, setCurrentPage] = useState(1);
+  let totalPages = Math.ceil(apiSorted.length / productsPerPage);
+
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
-  const productsToShow = apiSorted.slice(startIndex, endIndex);
 
+  const productsToShow = apiSorted.slice(startIndex, endIndex);
   const goToPreviousPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
     }
   };
-
   const goToNextPage = () => {
-    const totalPages = Math.ceil(apiSorted.length / productsPerPage);
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
     }
@@ -36,14 +36,13 @@ export default function ProdFood() {
   return (
     <>
       <main>
-        <section className="products-food-section">
+        <section className="sectionForProducts">
           <div className="search-bar-section">
             <SearchBar></SearchBar>
           </div>
 
-          <section className="container-products-food">
-            <div className="food-container">
-              {/* Renderiza la lista de productos */}
+          <section className="sectionDesign">
+            <div className="productsContainer">
               {productsToShow.map((product) => (
                 <ProductsDesign
                   product={product}
@@ -59,9 +58,16 @@ export default function ProdFood() {
             </aside>
           </section>
           <div className="pages">
-            <button onClick={goToPreviousPage}>Anterior</button>
+            <button onClick={goToPreviousPage} disabled={currentPage === 1}>
+              Anterior
+            </button>
             <span>{currentPage}</span>
-            <button onClick={goToNextPage}>Siguiente</button>
+            <button
+              onClick={goToNextPage}
+              disabled={currentPage === totalPages}
+            >
+              Siguiente
+            </button>
           </div>
         </section>
       </main>

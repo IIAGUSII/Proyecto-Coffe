@@ -1,4 +1,4 @@
-import "./ProdCoffee.css";
+import "./ProdsDesign.css";
 import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { UserContext } from "../../../../ProductsContext.jsx";
@@ -7,14 +7,12 @@ import SearchBar from "../BarraDeBusqueda/SearchBar";
 import FilterAndOrder from "../FilterAndOrder/FilterAndOrder.jsx";
 import ProductsDesign from "./ProdsDesign";
 function FilterCoffee() {
-  // console.log(products);
-
   const { apiData, searchText, apiSorted, isApiQuery, setCatalogName } =
     useContext(UserContext);
-  // console.log(apiData);
-  const productsPerPage = 12;
-  console.log(apiData);
+  const productsPerPage = 10;
   const [currentPage, setCurrentPage] = useState(1);
+
+  let totalPages = Math.ceil(apiSorted.length / productsPerPage);
 
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
@@ -25,9 +23,7 @@ function FilterCoffee() {
       setCurrentPage(currentPage - 1);
     }
   };
-  console.log(productsToShow);
   const goToNextPage = () => {
-    const totalPages = Math.ceil(apiSorted.length / productsPerPage);
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
     }
@@ -39,13 +35,13 @@ function FilterCoffee() {
   return (
     <>
       <main>
-        <section className="products-food-section">
+        <section className="sectionForProducts">
           <div className="search-bar-section">
             <SearchBar></SearchBar>
           </div>
 
-          <section className="container-products-food">
-            <div className="food-container">
+          <section className="sectionDesign">
+            <div className="productsContainer">
               {productsToShow.map((product) => (
                 <ProductsDesign
                   product={product}
@@ -61,9 +57,16 @@ function FilterCoffee() {
             </aside>
           </section>
           <div className="pages">
-            <button onClick={goToPreviousPage}>Anterior</button>
+            <button onClick={goToPreviousPage} disabled={currentPage === 1}>
+              Anterior
+            </button>
             <span>{currentPage}</span>
-            <button onClick={goToNextPage}>Siguiente</button>
+            <button
+              onClick={goToNextPage}
+              disabled={currentPage === totalPages}
+            >
+              Siguiente
+            </button>
           </div>
         </section>
       </main>

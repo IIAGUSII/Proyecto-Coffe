@@ -5,7 +5,6 @@ import OpinionTwo from "./OpinionTwo";
 import OpinionThree from "./OpinionThree";
 
 function Opinions() {
-  console.log("holap");
   return (
     <section className="opinions">
       <h2>OPINIONES</h2>

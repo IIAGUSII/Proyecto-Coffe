@@ -19,14 +19,6 @@ function ProductsDesign({ product }) {
           <Shop />
           <img src={favourite} alt="" />
         </div>
-        {/* <div className="addAndSubstract">
-          <button className="buttonSubstract">
-            <span>-</span>
-          </button>
-          <button className="buttonAdd">
-            <span>+</span>
-          </button>
-        </div> */}
       </div>
     </article>
   );

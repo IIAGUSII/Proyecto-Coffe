@@ -6,8 +6,6 @@ import { UserContext } from "../../../../ProductsContext.jsx";
 function OurProducts() {
   const { apiData, isHambur } = useContext(UserContext);
 
-  // console.log(apiData);
-
   return (
     <section className="section-products">
       <h2 className="products-texts">Nuestros productos</h2>
