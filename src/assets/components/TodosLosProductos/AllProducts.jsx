@@ -51,7 +51,7 @@ function AllProducts() {
               Anterior
             </button>
             <span>
-              {currentPage} de {totalPages}
+              {currentPage} de {totalPages}{" "}
             </span>
             <button
               onClick={goToNextPage}
