@@ -41,8 +41,7 @@
 
 .product-add {
   display: flex;
-  justify-content: space-around;
-  margin: 1rem;
+  justify-content: center;
   fill: #e3caa5;
 }
 
@@ -50,6 +49,7 @@
   width: 25px;
   height: 25px;
   border-radius: 0;
+  margin-left: 0.5rem;
 }
 
 .rectangle {

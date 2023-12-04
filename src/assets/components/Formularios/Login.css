@@ -5,26 +5,25 @@
 
 .form_login {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: 1rem;
-}
-
-.all_formulary {
-  display: flex;
+  align-items: center;
+  height: 300px;
 }
 
 .form_users {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .inputs_user {
   background-color: #d9d9d957;
-  height: 29px;
+  height: 36px;
   border-radius: 32px;
   border: none;
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
 }
 
 ::placeholder {
@@ -36,6 +35,7 @@
   display: flex;
   color: rgb(255, 255, 255);
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .button_form {
@@ -58,4 +58,14 @@
   background-color: #b29e80;
   color: #000000;
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.582);
+}
+
+@media (min-width: 480px) {
+  .form_users {
+    display: flex;
+    flex-direction: row;
+  }
+  .inputs_user {
+    margin: 0 0.5rem;
+  }
 }

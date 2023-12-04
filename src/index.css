@@ -5,4 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  /* outline: 0.4px solid red; */
+}
+main {
+  padding-top: 9vh;
+}
+
+body {
+  position: relative;
 }

@@ -13,28 +13,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 320px;
+  margin-top: 1rem;
 }
 
 .form_name {
-  display: grid;
-  grid-template-columns: repeat(20, 5%);
-  grid-template-rows: repeat(4, auto);
-  grid-row-gap: 15%;
-}
-#first_name {
-  grid-column: 4/5;
-  grid-row: 1/2;
-}
-#last_name {
-  grid-column: 11/12;
-  grid-row: 1/2;
-  margin-left: 4px;
-}
-#email {
-  grid-column: 8/9;
-  grid-row: 2/3;
-  margin-left: -12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .inputs_form {
@@ -43,6 +28,8 @@
   height: 29px;
   border-radius: 32px;
   border: none;
+  color: rgb(255, 255, 255);
+  margin: 0.5rem 0;
 }
 
 ::placeholder {
@@ -52,7 +39,7 @@
 
 .text_form {
   display: grid;
-  grid-template-columns: repeat(8, 1f);
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(2, auto);
   margin: 20px;
 }
@@ -63,20 +50,20 @@
 
 .radios_consult {
   display: grid;
-  grid-template-columns: repeat(20, 5%);
-  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(3, 30%);
   margin-bottom: 1rem;
+  justify-content: center;
 }
 .pay {
-  grid-column: 4/5;
+  grid-column: 1/2;
   grid-row: 1/2;
 }
 .work {
-  grid-column: 9/10;
+  grid-column: 2/3;
   grid-row: 1/2;
 }
 .other {
-  grid-column: 14/15;
+  grid-column: 3/4;
   grid-row: 1/2;
 }
 
@@ -92,8 +79,8 @@
   background-color: #d9d9d957;
   border-radius: 32px;
   border: none;
-  width: 88px;
-  height: 29px;
+  width: 112px;
+  height: 36px;
 }
 
 .button_Cont {
@@ -106,6 +93,7 @@
   justify-content: center;
   border: 2px solid #b29e80;
   border-radius: 80px;
+  margin-bottom: 2rem;
 }
 
 .button button {
@@ -120,4 +108,13 @@
   background-color: #b29e80;
   color: #000000;
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.582);
+  width: 134px;
+  height: 35px;
+}
+
+@media (min-width: 480px) {
+  .form_name {
+    display: flex;
+    flex-direction: row;
+  }
 }

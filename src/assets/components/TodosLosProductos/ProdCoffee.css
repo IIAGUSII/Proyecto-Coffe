@@ -1,7 +1,8 @@
 .rectangleContainer {
-  width: 180px;
-  height: 179.2px;
-  background: rgba(0, 0, 0, 0.1);
+  width: 192px;
+  height: 188px;
+  background: #454545;
+  border: 1px solid #e3caa5;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -33,7 +34,8 @@
   width: 134px;
   height: 77px;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.1);
+  background: #454545;
+  border: 1px solid #e3caa5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
   margin-top: 5%;
@@ -43,14 +45,11 @@
 }
 
 .rectanglePrice {
-  width: 88px;
-  height: 27px;
-  border-radius: 32px;
-  background: rgba(217, 217, 217, 0.25);
-  box-shadow: 4px 7px 15px 0px rgba(0, 0, 0, 0.08),
-    -5px 5px 12px 0px rgba(0, 0, 0, 0.05) inset,
-    5px -5px 12px 0px rgba(0, 0, 0, 0.05) inset,
-    -1px 0px 2px 0px rgba(0, 0, 0, 0.1) inset;
+  width: 96px;
+  height: 30px;
+  border-radius: 16px;
+  border: 1px solid #e3caa5;
+  background: rgba(0, 0, 0, 0.25);
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -69,13 +68,13 @@
 
   text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.35);
 
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.addAndSubstract {
+/* .addAndSubstract {
   display: flex;
   margin: 0 auto;
   gap: 1em;
@@ -115,4 +114,4 @@
   font-weight: bold;
   outline: none;
   border: none;
-}
+} */

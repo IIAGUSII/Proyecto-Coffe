@@ -1,11 +1,13 @@
 import "./ProdsDesign.css";
 import Dolar from "../icons/Dolar";
+import favourite from "../../img/favourite.svg";
+import Shop from "../icons/Shop";
 
 function ProductsDesign({ product }) {
   return (
     <article>
       <div className="rectangleContainer">
-        <img src={product.photo} alt="" />
+        <img src={product.picture} alt="" />
         <h3>{product.name}</h3>
       </div>
       <div className="rectangleTwo">
@@ -13,14 +15,18 @@ function ProductsDesign({ product }) {
           <Dolar></Dolar>
           <p>{product.price}</p>
         </div>
-        <div className="addAndSubstract">
+        <div className="product-add">
+          <Shop />
+          <img src={favourite} alt="" />
+        </div>
+        {/* <div className="addAndSubstract">
           <button className="buttonSubstract">
             <span>-</span>
           </button>
           <button className="buttonAdd">
             <span>+</span>
           </button>
-        </div>
+        </div> */}
       </div>
     </article>
   );

@@ -4,7 +4,6 @@ import "./AllProducts.css";
 import { UserContext } from "../../../../ProductsContext.jsx";
 import ArrowUp from "../icons/ArrowUp.jsx";
 import ArrowDown from "../icons/ArrowDown";
-
 import SearchBar from "../BarraDeBusqueda/SearchBar.jsx";
 import ProductsDesign from "./ProdsDesign.jsx";
 
@@ -17,6 +16,7 @@ function AllProducts() {
     isSortBottom,
     setIsSortBottom,
     isSortUp,
+
     setIsSortUp,
   } = useContext(UserContext);
 

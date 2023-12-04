@@ -1,9 +1,9 @@
-import AgusProfile from "../../img/AgusProfile.jpeg";
+import MatiasProfile from "../../img/MatiasProfile.jpeg";
 
-function OpinionOne() {
+function OpinionThree() {
   return (
-    <div className="opinion_one">
-      <img src={AgusProfile} alt="" />
+    <div className="opinion_three">
+      <img src={MatiasProfile} alt="" />
       <div className="text_opinion">
         <h3>
           "¡Un gran café Affogato! RECOMIENDO: Tomar un Affogato junto a una
@@ -14,9 +14,9 @@ function OpinionOne() {
           olor y está muy limpio. ¡Recomiendo CODESPRESSO!
         </p>
       </div>
-      <h3>Agus</h3>
+      <h3>Mati</h3>
     </div>
   );
 }
 
-export default OpinionOne;
+export default OpinionThree;
