@@ -20,37 +20,39 @@ function Form() {
           <div className="formulary">
             <form onSubmit={handleSubmit}>
               <div className="form_name">
-                <label className="labels_form" htmlFor="first_name"></label>
-                <input
-                  ref={name}
-                  placeholder="Ejemplo: Emiliano..."
-                  className="inputs_form"
-                  type="text"
-                  id="first_name"
-                  name="first_name"
-                  required
-                />
-                <label className="labels_form" htmlFor="last_name"></label>
-                <input
-                  ref={surname}
-                  placeholder="Ejemplo: Martinez..."
-                  className="inputs_form"
-                  type="text"
-                  id="last_name"
-                  name="last_name"
-                  required
-                />
-
-                <label className="labels_form" htmlFor="email"></label>
-                <input
-                  ref={mail}
-                  placeholder="dibu23@ejemplo.com"
-                  className="inputs_form"
-                  type="text"
-                  id="email"
-                  name="email"
-                  required
-                />
+                <label className="labels_form" htmlFor="first_name">
+                  <input
+                    ref={name}
+                    placeholder="Ejemplo: Emiliano..."
+                    className="inputs_form first_name"
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    required
+                  />
+                </label>
+                <label className="labels_form" htmlFor="last_name">
+                  <input
+                    ref={surname}
+                    placeholder="Ejemplo: Martinez..."
+                    className="inputs_form last_name"
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    required
+                  />
+                </label>
+                <label className="labels_form" htmlFor="email">
+                  <input
+                    ref={mail}
+                    placeholder="dibu23@ejemplo.com"
+                    className="inputs_form email_form"
+                    type="text"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </label>
               </div>
               <label className="text_form" htmlFor="consult">
                 <p>¿Cuál es su consulta?</p>

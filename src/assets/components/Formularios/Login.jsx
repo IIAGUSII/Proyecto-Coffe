@@ -4,7 +4,6 @@ import "./Login.css";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [token, setToken] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,17 +21,7 @@ function Login() {
       });
 
       if (response.ok) {
-        const responseData = await response.json();
-        const receivedToken = responseData.token;
-
-        // Almacena el token en el estado
-        setToken(receivedToken);
-
-        // Almacena el token en localStorage
-        localStorage.setItem("token", receivedToken);
-
         console.log("Login exitoso");
-        console.log("Token obtenido:", receivedToken);
       } else {
         // Manejar errores en el login
         console.error("Error en el login");
@@ -65,7 +54,7 @@ function Login() {
                   <input
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="ingrese su contraseña..."
+                    placeholder="Ingrese su contraseña..."
                     className="inputs_user"
                     type="password"
                     name="password"

@@ -7,8 +7,6 @@
 .form_register {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-top: 1rem;
 }
 
 .form {
@@ -17,13 +15,12 @@
 }
 
 .form_person {
-  margin-left: 25px;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(4, auto);
-  grid-row-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*grid-template-rows: repeat(2, 50%);*/
 }
-.label_name {
+/* .label_name {
   grid-column: 1/2;
   grid-row: 1/2;
 }
@@ -32,13 +29,13 @@
   grid-row: 1/2;
 }
 .label_email {
-  grid-column: 2/3;
-  grid-row: 2/3;
+  grid-column: -2/-1;
+  grid-row: -2/-1;
 }
 .label_password {
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
+  grid-column: 2/-3;
+  grid-row: 3/-2;
+} */
 
 .date_all,
 .gender_all {
@@ -89,16 +86,18 @@
   background-color: #d9d9d957;
   border-radius: 32px;
   border: none;
-  width: 75px;
-  height: 30px;
-}
-.inputs_form {
-  background-color: #d9d9d957;
-  width: 154px;
+  width: 86px;
   height: 36px;
+}
+.inputs_person {
+  background-color: #d9d9d957;
+  color: rgb(255, 255, 255);
+  width: 246px;
+  height: 46px;
   border-radius: 32px;
   border: none;
   padding-left: 0.5rem;
+  margin-top: 1rem;
 }
 
 ::placeholder {

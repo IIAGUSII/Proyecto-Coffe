@@ -12,6 +12,7 @@ function AllProducts() {
   const { isApiQuery, apiSorted } = useContext(UserContext);
 
   const [currentPage, setCurrentPage] = useState(1);
+  let totalPages = Math.ceil(apiSorted.length / productsPerPage);
 
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
@@ -23,7 +24,6 @@ function AllProducts() {
     }
   };
   const goToNextPage = () => {
-    const totalPages = Math.ceil(apiSorted.length / productsPerPage);
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
     }
@@ -47,9 +47,18 @@ function AllProducts() {
         </section>
         <section>
           <div className="pages">
-            <button onClick={goToPreviousPage}>Anterior</button>
-            <span>{currentPage}</span>
-            <button onClick={goToNextPage}>Siguiente</button>
+            <button onClick={goToPreviousPage} disabled={currentPage === 1}>
+              Anterior
+            </button>
+            <span>
+              {currentPage} de {totalPages}
+            </span>
+            <button
+              onClick={goToNextPage}
+              disabled={currentPage === totalPages}
+            >
+              Siguiente
+            </button>
           </div>
         </section>
       </section>

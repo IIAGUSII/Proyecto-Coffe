@@ -1,10 +1,10 @@
-import señoritaTaylor from "../../img/señoritaTaylor.webp";
+import AriProfile from "../../img/AriProfile.jpeg";
 
 function OpinionTwo() {
   return (
     <div className="opinion_two">
-      <img src={señoritaTaylor} alt="" />
-      <div className="text_two">
+      <img src={AriProfile} alt="" />
+      <div className="text_opinion">
         <h3>
           “¡Es un café muy estético! RECOMIENDO: Tomar un Latte Art junto a sus
           medialunas de manteca, que son muy ricas”.
@@ -14,6 +14,7 @@ function OpinionTwo() {
           muy deliciosa. ¡Totalmente recomendable!
         </p>
       </div>
+      <h3>Ari</h3>
     </div>
   );
 }

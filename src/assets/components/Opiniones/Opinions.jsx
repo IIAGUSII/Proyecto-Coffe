@@ -2,6 +2,7 @@ import "./Opinion.css";
 
 import OpinionOne from "./OpinionOne";
 import OpinionTwo from "./OpinionTwo";
+import OpinionThree from "./OpinionThree";
 
 function Opinions() {
   console.log("holap");
@@ -11,6 +12,7 @@ function Opinions() {
       <div className="opinions_container">
         <OpinionOne></OpinionOne>
         <OpinionTwo></OpinionTwo>
+        <OpinionThree />
       </div>
     </section>
   );

@@ -77,31 +77,31 @@ main {
 }
 .pages {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: 15%;
+  margin-top: 4rem;
 }
 
 .pages button {
   background-color: #e3caa5;
-  width: 75px;
+  width: 120px;
   height: 40px;
   border-radius: 80px;
   border: none;
   margin: 1em;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .pages span {
   font-size: 18px;
-
   background-color: #e3caa5;
-  width: 40px;
+  width: 100px;
   height: 40px;
   border-radius: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 .all-products-section {

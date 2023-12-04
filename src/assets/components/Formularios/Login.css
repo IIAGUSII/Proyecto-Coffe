@@ -1,23 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .form_login {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1rem;
-}
-
-.all_formulary {
-  display: flex;
+  align-items: center;
+  height: 300px;
 }
 
 .form_users {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .inputs_user {
@@ -26,9 +17,7 @@
   border-radius: 32px;
   border: none;
   padding: 0.5rem;
-}
-
-#password {
+  color: rgb(255, 255, 255);
   margin-top: 1rem;
 }
 
@@ -66,9 +55,12 @@
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.582);
 }
 
-@media (min-width: 768px) {
-  #password {
-    margin-top: 0;
-    margin-left: 1rem;
+@media (min-width: 480px) {
+  .form_users {
+    display: flex;
+    flex-direction: row;
+  }
+  .inputs_user {
+    margin: 0 0.5rem;
   }
 }
