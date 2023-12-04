@@ -146,10 +146,6 @@ function Admin() {
     console.log(`Aca mati${JSON.stringify(product)}`);
   };
 
-  // const name = useRef();
-  // const picture = useRef();
-  // const price = useRef();
-  // const descrip = useRef();
   const [isCatalogClicked, setIsCatalogClicked] = useState(false);
   const [isEditClicked, setIsEditClicked] = useState(false);
   const [isSortedUp, setIsSortedUp] = useState(false);
@@ -162,28 +158,6 @@ function Admin() {
   const { catalogName, setCatalogName, isApiQuery, setIdDelete, apiSorted } =
     useContext(UserContext);
 
-  // const sortedProducts = isSortedDown
-  //   ? [...isApiQuery].sort((a, b) => a.price - b.price)
-  //   : isSortedUp
-  //   ? [...isApiQuery].sort((a, b) => b.price - a.price)
-  //   : isApiQuery;
-
-  // const sortAscending = () => {
-  //   setIsSortedUp(true);
-  //   setIsSortedDown(false);
-  // };
-
-  // // Función para ordenar los productos de mayor a menor precio
-  // const sortDescending = () => {
-  //   setIsSortedUp(false);
-  //   setIsSortedDown(true);
-  // };
-
-  // // Función para restablecer el ordenamiento
-  // const resetAllSort = () => {
-  //   setIsSortedUp(false);
-  //   setIsSortedDown(false);
-  // };
   function handleDelete(id) {
     setIdDelete(id);
   }
@@ -224,7 +198,7 @@ function Admin() {
           <article className="products-container">
             {apiSorted.map(({ name, id }) => {
               return (
-                <span className="product-admin">
+                <span key={id} className="product-admin">
                   <p>{name}</p>
                   <button onClick={() => handleDelete(id)}>
                     <TrashIcon></TrashIcon>
@@ -252,7 +226,7 @@ function Admin() {
             </article>
           </article>
         </div>
-        <FilterAndOrder api={isApiQuery}></FilterAndOrder>
+        <FilterAndOrder api={isApiQuery} isActive={true}></FilterAndOrder>
       </section>
       <div className="order-page-product">
         <p className="left-order-page-product">&lt;</p>

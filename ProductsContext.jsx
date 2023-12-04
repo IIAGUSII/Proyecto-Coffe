@@ -4,10 +4,12 @@ export const UserContext = createContext();
 const url = "http://localhost:3000/products";
 export const UserContextProvider = ({ children }) => {
   const [catalogName, setCatalogName] = useState("");
-  const [isApiQuery, setIsApiQuery] = useState([]);
+
   const [idDelete, setIdDelete] = useState("");
   const [apiSorted, setApiSorted] = useState([]);
   const urlQuery = `http://localhost:3000/products?catalog=${catalogName}`;
+  const [isApiQuery, setIsApiQuery] = useState([]);
+
   // const urlQueryFood = `http://localhost:3000/products?catalog=${catalogName}`;
   // const urlDeleteParams = `http://localhost:3000/products/${idDelete}`;
   const token = localStorage.getItem("token");

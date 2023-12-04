@@ -7,9 +7,8 @@ import SearchBar from "../BarraDeBusqueda/SearchBar.jsx";
 import ProductsDesign from "./ProdsDesign.jsx";
 import FilterAndOrder from "../FilterAndOrder/FilterAndOrder.jsx";
 
-const productsPerPage = 12;
-
 function AllProducts() {
+  const productsPerPage = 10;
   const { isApiQuery, apiSorted } = useContext(UserContext);
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -23,7 +22,6 @@ function AllProducts() {
       setCurrentPage(currentPage - 1);
     }
   };
-  console.log(productsToShow);
   const goToNextPage = () => {
     const totalPages = Math.ceil(apiSorted.length / productsPerPage);
     if (currentPage < totalPages) {
@@ -44,7 +42,7 @@ function AllProducts() {
             ))}
           </div>
           <aside className="filter-section">
-            <FilterAndOrder api={isApiQuery}></FilterAndOrder>
+            <FilterAndOrder api={isApiQuery} isActive={true}></FilterAndOrder>
           </aside>
         </section>
         <section>

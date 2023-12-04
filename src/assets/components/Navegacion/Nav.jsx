@@ -56,7 +56,7 @@ function Nav() {
             </li>
           </NavLink>
           <NavLink
-            onClick={() => setCatalogName("")}
+            onClick={() => setCatalogName("Bebida caliente,Bebida Fria")}
             className="link-menu"
             to="/coffee"
           >

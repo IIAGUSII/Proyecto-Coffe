@@ -9,7 +9,7 @@ import ProductsDesign from "./ProdsDesign";
 function FilterCoffee() {
   // console.log(products);
 
-  const { apiData, searchText, apiSorted, isApiQuery } =
+  const { apiData, searchText, apiSorted, isApiQuery, setCatalogName } =
     useContext(UserContext);
   // console.log(apiData);
   const productsPerPage = 12;
@@ -32,6 +32,10 @@ function FilterCoffee() {
       setCurrentPage(currentPage + 1);
     }
   };
+  useEffect(() => {
+    // Establece el nombre del catálogo después del renderizado
+    setCatalogName("Bebida caliente,Bebida fria");
+  }, []); //
   return (
     <>
       <main>
