@@ -260,13 +260,13 @@ function Admin() {
             : `order-page-product`
         }
       >
-        <p className="left-order-page-product">&lt;</p>
+        {/* <p className="left-order-page-product">&lt;</p>
         <span className="order-page-selection-item"></span>
         <span className="order-page-selection-item"></span>
         <span className="order-page-selection-item"></span>
         <span className="order-page-selection-item"></span>
         <span className="order-page-selection-item"></span>
-        <p className="right-order-page-product">&gt;</p>
+        <p className="right-order-page-product">&gt;</p> */}
       </div>
     </main>
   );

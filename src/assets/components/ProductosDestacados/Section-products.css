@@ -1,7 +1,7 @@
 .section-products {
   margin: 0 auto;
   background-color: #1d2127;
-  margin-top: 6%;
+  margin-top: 4rem;
 }
 
 .our-products {
@@ -10,7 +10,7 @@
   align-content: space-around;
   justify-content: space-around;
   margin: 0 auto;
-  margin-top: 8%;
+  margin-top: 2rem;
   gap: 2em;
   width: 90%;
   align-items: center;
@@ -21,11 +21,15 @@
   width: 90%;
   text-align: center;
   color: #fff;
-  font-size: 15px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-top: 10;
+}
 
-  font-family: "Playfair Display", serif;
+@media (min-width: 1200px) {
+  .our-products {
+    gap: 0;
+  }
 }

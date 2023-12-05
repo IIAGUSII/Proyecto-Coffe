@@ -9,7 +9,7 @@ function FormAdd({ handleSubmit, productForm, handleImputChange }) {
         >
           <div className="prods_form">
             <label className="labels_prods" htmlFor="name">
-              Nombre a crear:
+              Añadir nombre del producto:
             </label>
             <input
               placeholder="Ejemplo: Affogato..."
@@ -23,7 +23,7 @@ function FormAdd({ handleSubmit, productForm, handleImputChange }) {
             />
 
             <label className="labels_prods" htmlFor="picture">
-              Imagen a crear:
+              Añadir imagen:
             </label>
             <input
               placeholder="Ejemplo: https://i.pinimg.com..."
@@ -36,7 +36,7 @@ function FormAdd({ handleSubmit, productForm, handleImputChange }) {
               onChange={handleImputChange}
             />
 
-            <label className="labels_prods">Catalog:</label>
+            <label className="labels_prods">Catálogo del producto:</label>
             <div>
               {[
                 "Comida",
@@ -62,7 +62,7 @@ function FormAdd({ handleSubmit, productForm, handleImputChange }) {
             </div>
 
             <label className="labels_prods" htmlFor="price">
-              Precio a añadir:
+              Añadir precio:
             </label>
             <input
               placeholder="Ejemplo: $1900"
@@ -76,7 +76,7 @@ function FormAdd({ handleSubmit, productForm, handleImputChange }) {
             />
 
             <label className="labels_prods" htmlFor="descript">
-              Descripcion a editar:
+              Añadir descripción:
             </label>
             <textarea
               placeholder="Una explosión de sabores..."

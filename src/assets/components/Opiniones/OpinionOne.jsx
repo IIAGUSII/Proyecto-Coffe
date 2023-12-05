@@ -14,7 +14,7 @@ function OpinionOne() {
           olor y está muy limpio. ¡Recomiendo CODESPRESSO!
         </p>
       </div>
-      <h3>Agus</h3>
+      <h4>Agus</h4>
     </div>
   );
 }

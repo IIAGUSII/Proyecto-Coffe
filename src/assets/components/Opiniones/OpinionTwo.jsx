@@ -14,7 +14,7 @@ function OpinionTwo() {
           muy deliciosa. ¡Totalmente recomendable!
         </p>
       </div>
-      <h3>Ari</h3>
+      <h4>Ari</h4>
     </div>
   );
 }

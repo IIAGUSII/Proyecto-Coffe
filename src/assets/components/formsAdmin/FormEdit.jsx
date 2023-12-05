@@ -13,7 +13,7 @@ function FormEdit({
         >
           <div className="prods_form">
             <label className="labels_prods" htmlFor="name">
-              Name:
+              Editar nombre del producto:
             </label>
             <input
               placeholder="Ejemplo: Affogato..."
@@ -26,7 +26,7 @@ function FormEdit({
             />
 
             <label className="labels_prods" htmlFor="picture">
-              Picture:
+              Editar imagen:
             </label>
             <input
               placeholder="Ejemplo: https://i.pinimg.com..."
@@ -38,7 +38,7 @@ function FormEdit({
               onChange={handleImputEditChange}
             />
 
-            <label className="labels_prods">Catalog:</label>
+            <label className="labels_prods">Catálogo del producto:</label>
             <div>
               {[
                 "Comida",
@@ -64,7 +64,7 @@ function FormEdit({
             </div>
 
             <label className="labels_prods" htmlFor="price">
-              Price:
+              Editar precio:
             </label>
             <input
               placeholder="Ejemplo: $1900"
@@ -77,7 +77,7 @@ function FormEdit({
             />
 
             <label className="labels_prods" htmlFor="descript">
-              Description:
+              Editar descripción:
             </label>
             <textarea
               placeholder="Una explosión de sabores..."
