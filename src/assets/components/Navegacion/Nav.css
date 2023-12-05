@@ -65,7 +65,7 @@ nav {
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 1.7rem;
   text-align: center;
   align-items: flex-start;
 }
@@ -78,7 +78,8 @@ nav {
 
 .coffe-nav,
 .coffe-maker-icon,
-.coffe-grains-nav {
+.coffe-grains-nav,
+.login-icon {
   width: 2rem;
   fill: white;
   height: 2rem;
@@ -96,7 +97,8 @@ nav {
 .coffe-paragraph,
 .coffe-grains-paragraph,
 .coffe-maker-paragraph,
-.user-paragraph {
+.user-paragraph,
+.login-paragraph {
   display: flex;
   gap: 1.2rem;
   align-items: center;

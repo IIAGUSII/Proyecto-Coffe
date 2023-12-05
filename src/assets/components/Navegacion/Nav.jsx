@@ -13,6 +13,7 @@ import CoffeMaker from "../icons/CoffeMaker";
 import CoffeGrains from "../icons/CoffeeGrains";
 import UserIcon from "../icons/UserIcon";
 import AdminIcon from "../icons/AdminIcon";
+import LoginIcon from "../icons/LoginIcon";
 import AllProductsIcon from "../icons/allProductsIcon";
 
 function Nav() {
@@ -25,7 +26,11 @@ function Nav() {
         <div className="center-icon">
           <img src={logocodespresso} alt="" />
         </div>
-        <Shop></Shop>
+        <img
+          className="profile-picture"
+          src="https://i.pinimg.com/736x/5d/c3/1a/5dc31a319d3c2cc0d0d3441769fbc0c7.jpg"
+          alt=""
+        />
       </nav>
 
       <aside
@@ -95,7 +100,17 @@ function Nav() {
           >
             <li class="user-paragraph">
               <UserIcon></UserIcon>
-              <p>Usuario</p>
+              <p>Registrarse</p>
+            </li>
+          </NavLink>
+          <NavLink
+            onClick={() => setCatalogName("")}
+            className="link-menu"
+            to="/login"
+          >
+            <li class="login-paragraph">
+              <LoginIcon />
+              <p>Iniciar sesión</p>
             </li>
           </NavLink>
           <NavLink
