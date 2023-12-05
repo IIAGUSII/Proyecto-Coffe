@@ -29,6 +29,7 @@ function Register() {
 
       if (response.ok) {
         console.log("Registro exitoso");
+        window.location.href = '/login';
       } else {
         // Manejar errores en el registro
         console.error("Error en el registro");

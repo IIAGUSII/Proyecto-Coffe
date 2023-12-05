@@ -14,7 +14,7 @@ function OpinionThree() {
           olor y está muy limpio. ¡Recomiendo CODESPRESSO!
         </p>
       </div>
-      <h3>Mati</h3>
+      <h4>Mati</h4>
     </div>
   );
 }

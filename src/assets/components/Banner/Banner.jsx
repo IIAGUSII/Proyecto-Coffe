@@ -7,14 +7,16 @@ import { UserContext } from "../../../../ProductsContext.jsx";
 function Banner() {
   const { isHambur } = useContext(UserContext);
   return (
-    <article className="main-banner">
-      <div className="filter">
-        <>
-          <TextsBanner />
-          <SearchBar />
-        </>
+    <section className="main-banner">
+      <div className="banner-image">
+        <div className="filter">
+          <>
+            <TextsBanner />
+            <SearchBar />
+          </>
+        </div>
       </div>
-    </article>
+    </section>
   );
 }
 
