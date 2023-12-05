@@ -1,6 +1,6 @@
 function FormAdd({ handleSubmit, productForm, handleImputChange }) {
   return (
-    <section className="form_products">
+    <section className="form_products ">
       <div className="formulary_prods">
         <form
           encType="multipart/form-data"
@@ -9,7 +9,7 @@ function FormAdd({ handleSubmit, productForm, handleImputChange }) {
         >
           <div className="prods_form">
             <label className="labels_prods" htmlFor="name">
-              Name:
+              Nombre a crear:
             </label>
             <input
               placeholder="Ejemplo: Affogato..."
@@ -23,7 +23,7 @@ function FormAdd({ handleSubmit, productForm, handleImputChange }) {
             />
 
             <label className="labels_prods" htmlFor="picture">
-              Picture:
+              Imagen a crear:
             </label>
             <input
               placeholder="Ejemplo: https://i.pinimg.com..."
@@ -62,7 +62,7 @@ function FormAdd({ handleSubmit, productForm, handleImputChange }) {
             </div>
 
             <label className="labels_prods" htmlFor="price">
-              Price:
+              Precio a añadir:
             </label>
             <input
               placeholder="Ejemplo: $1900"
@@ -76,7 +76,7 @@ function FormAdd({ handleSubmit, productForm, handleImputChange }) {
             />
 
             <label className="labels_prods" htmlFor="descript">
-              Description:
+              Descripcion a editar:
             </label>
             <textarea
               placeholder="Una explosión de sabores..."

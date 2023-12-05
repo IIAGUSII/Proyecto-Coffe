@@ -10,8 +10,6 @@ export const UserContextProvider = ({ children }) => {
   const urlQuery = `http://localhost:3000/products?catalog=${catalogName}`;
   const [isApiQuery, setIsApiQuery] = useState([]);
 
-  // const urlQueryFood = `http://localhost:3000/products?catalog=${catalogName}`;
-  // const urlDeleteParams = `http://localhost:3000/products/${idDelete}`;
   const token = localStorage.getItem("token");
   useEffect(() => {
     fetch(urlQuery)

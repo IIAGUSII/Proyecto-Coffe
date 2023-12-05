@@ -21,7 +21,6 @@ function FormEdit({
               type="text"
               id="name"
               name="name"
-              required
               value={editForm.name}
               onChange={handleImputEditChange}
             />
@@ -35,7 +34,6 @@ function FormEdit({
               type="text"
               id="picture"
               name="picture"
-              required
               value={editForm.picture}
               onChange={handleImputEditChange}
             />
@@ -74,7 +72,6 @@ function FormEdit({
               type="text"
               id="price"
               name="price"
-              required
               value={editForm.price}
               onChange={handleImputEditChange}
             />
@@ -90,7 +87,6 @@ function FormEdit({
               name="descript"
               rows="6"
               cols="30"
-              required
               value={editForm.descript}
               onChange={handleImputEditChange}
             />

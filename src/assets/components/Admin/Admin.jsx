@@ -25,7 +25,7 @@ function Admin() {
     name: "",
     picture: "",
     price: "",
-    descrip: "",
+    descript: "",
     catalog: [],
   });
 
@@ -101,10 +101,12 @@ function Admin() {
   };
 
   const addProduct = async (product) => {
+    console.log(`soy ${catalogName}`);
     try {
       const response = await fetch(`http://localhost:3000/products`, {
         method: "POST",
         headers: {
+          Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify(product),
@@ -169,10 +171,53 @@ function Admin() {
 
   return (
     <main className="main-container-admin">
-      <section className="products-order-container">
+      {isPlusProductClicked ? (
+        <article className="formularito">
+          <button
+            onClick={() => setIsPlusProductClicked(false)}
+            className="close-form-icon"
+          >
+            X
+          </button>
+          <FormAdd
+            handleSubmit={handleSubmit}
+            productForm={productForm}
+            handleImputChange={handleImputChange}
+          ></FormAdd>
+        </article>
+      ) : null}
+      {isEditClicked ? (
+        <article>
+          <button
+            onClick={() => setIsEditClicked(false)}
+            className="close-form-icon"
+          >
+            X
+          </button>
+          <FormEdit
+            handleSubmitEdit={handleSubmitEdit}
+            editForm={editForm}
+            handleImputEditChange={handleImputEditChange}
+          ></FormEdit>
+        </article>
+      ) : null}
+      <section
+        className={
+          isPlusProductClicked || isEditClicked
+            ? "hidden"
+            : "products-order-container"
+        }
+      >
         <div className="products-paragraph-plus-container">
           <div className="product-paragraph-plus">
-            <p>Productos </p>
+            <p>
+              Productos:{" "}
+              {catalogName.length ? (
+                <strong className="admin-color-strong">{catalogName}</strong>
+              ) : (
+                <strong className="admin-color-strong"> todos</strong>
+              )}{" "}
+            </p>
             <button
               onClick={() => setIsPlusProductClicked(!isPlusProductClicked)}
               className="button-plus-icon"
@@ -180,7 +225,7 @@ function Admin() {
               <PlusIcon></PlusIcon>
             </button>
           </div>
-          <article
+          {/* <article
             className={!isPlusProductClicked ? "hidden" : "form-plus-container"}
           >
             <button
@@ -189,12 +234,7 @@ function Admin() {
             >
               X
             </button>
-            <FormAdd
-              handleSubmit={handleSubmit}
-              productForm={productForm}
-              handleImputChange={handleImputChange}
-            ></FormAdd>
-          </article>
+          </article> */}
           <article className="products-container">
             {apiSorted.map(({ name, id }) => {
               return (
@@ -209,26 +249,17 @@ function Admin() {
                 </span>
               );
             })}
-            <article
-              className={!isEditClicked ? "hidden" : "form-plus-container"}
-            >
-              <button
-                onClick={() => setIsEditClicked(!isEditClicked)}
-                className="close-form-icon"
-              >
-                X
-              </button>
-              <FormEdit
-                handleSubmitEdit={handleSubmitEdit}
-                editForm={editForm}
-                handleImputEditChange={handleImputEditChange}
-              ></FormEdit>
-            </article>
           </article>
         </div>
         <FilterAndOrder api={isApiQuery} isActive={true}></FilterAndOrder>
       </section>
-      <div className="order-page-product">
+      <div
+        className={
+          isPlusProductClicked || isEditClicked
+            ? "hidden"
+            : `order-page-product`
+        }
+      >
         <p className="left-order-page-product">&lt;</p>
         <span className="order-page-selection-item"></span>
         <span className="order-page-selection-item"></span>

@@ -1,7 +1,7 @@
 import "./Nav.css";
 import { UserContext } from "../../../../ProductsContext";
-import { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 import Hambur from "../icons/Hambur";
 import Shop from "../icons/Shop";
@@ -14,7 +14,9 @@ import CoffeGrains from "../icons/CoffeeGrains";
 import UserIcon from "../icons/UserIcon";
 import AdminIcon from "../icons/AdminIcon";
 import AllProductsIcon from "../icons/allProductsIcon";
+
 function Nav() {
+  const [isClickedProducts, setIsClickedProducts] = useState(false);
   const { isActiveHambur, setCatalogName } = useContext(UserContext);
   return (
     <>
@@ -25,7 +27,8 @@ function Nav() {
         </div>
         <Shop></Shop>
       </nav>
-      <nav
+
+      <aside
         className={`hamburger-nav ${isActiveHambur ? "isActiveHambur" : ""}`}
       >
         <ul class="menu">
@@ -106,6 +109,80 @@ function Nav() {
             </li>
           </NavLink>
         </ul>
+      </aside>
+      <nav className="nav-destokp">
+        <ul>
+          <NavLink className="link-menu" to="/">
+            <li>Inicio</li>
+          </NavLink>
+          <li>
+            <p onClick={() => setIsClickedProducts(!isClickedProducts)}>
+              Productos
+            </p>
+
+            <aside className={isClickedProducts ? "" : "hidden"}>
+              <ul className="ul-deploy">
+                <NavLink
+                  onClick={() => setCatalogName("")}
+                  className="link-menu"
+                  to="/products"
+                >
+                  <li>Todos los productos</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => setCatalogName("comida")}
+                  className="link-menu"
+                  to="/comidas"
+                >
+                  <li>Comidas</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => setCatalogName("Bebida caliente,Bebida Fria")}
+                  className="link-menu"
+                  to="/coffee"
+                >
+                  <li>Cafes</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => setCatalogName("cafeteras")}
+                  className="link-menu"
+                  to="/cafeteras"
+                >
+                  <li>Cafeteras</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => setCatalogName("cafes molidos")}
+                  className="link-menu"
+                  to="/cafemolido"
+                >
+                  <li>Molidos</li>
+                </NavLink>
+              </ul>
+            </aside>
+          </li>
+          <NavLink className="link-menu" to="/registro">
+            <li>Registarse</li>
+          </NavLink>
+          <NavLink className="link-menu" to="/login">
+            <li>Iniciar sesion</li>
+          </NavLink>
+        </ul>
+
+        <img className="logo-nav" src={logocodespresso} alt="" />
+        <div className="center-profile-picture">
+          <NavLink
+            onClick={() => setCatalogName("")}
+            className="link-menu"
+            to="/admin"
+          >
+            <AdminIcon></AdminIcon>
+          </NavLink>
+          <img
+            className="profile-picture"
+            src="https://i.pinimg.com/736x/5d/c3/1a/5dc31a319d3c2cc0d0d3441769fbc0c7.jpg"
+            alt=""
+          />
+        </div>
       </nav>
     </>
   );

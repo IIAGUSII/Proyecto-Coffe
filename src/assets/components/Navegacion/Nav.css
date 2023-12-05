@@ -109,9 +109,95 @@ nav {
 }
 
 .active {
-  padding: 5px;
-  border: 2px solid #e3caa5;
-  border-radius: 8px;
+  font-weight: bold;
   fill: #e3caa5;
-  transition: all 0.2s ease-in-out;
+  color: #e3caa5;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-destokp {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-destokp ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  color: white;
+}
+
+@media (min-width: 0) {
+  .nav-destokp {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .hamburger-nav {
+    display: none;
+  }
+
+  .section-navbar {
+    display: none;
+  }
+
+  .nav-destokp {
+    display: flex;
+  }
+
+  .nav-destokp ul {
+    display: flex;
+  }
+}
+
+.logo-nav {
+  width: 50px;
+  height: 50px;
+}
+
+.center-profile-picture {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 0.8;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ul-deploy {
+  position: absolute;
+  margin-top: 2.7vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d2127;
+  border-radius: 0 0 10px 10px;
+  padding: 0.4rem;
+  border: 2px solid #e3caa5;
+}
+
+.nav-destokp ul li {
+  cursor: pointer;
+}
+
+.ul-deploy li {
+  padding: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
