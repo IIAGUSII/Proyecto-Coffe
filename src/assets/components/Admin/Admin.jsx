@@ -13,6 +13,7 @@ import FormAdd from "../formsAdmin/FormAdd.jsx";
 import FormEdit from "../formsAdmin/FormEdit.jsx";
 
 function Admin() {
+  const [alternativeName, setAlternativeName] = useState("");
   const [productForm, setProductForm] = useState({
     name: "",
     picture: "",
@@ -27,6 +28,7 @@ function Admin() {
     price: "",
     descript: "",
     catalog: [],
+    alternativeName: "",
   });
 
   const handleImputChange = (e) => {
@@ -83,6 +85,7 @@ function Admin() {
       setEditForm({
         ...editForm,
         [name]: value,
+        alternativeName,
       });
     }
   };
@@ -93,8 +96,11 @@ function Admin() {
     console.log(productForm);
   };
 
-  const handleEditAndDeploy = (id) => {
+  const handleEditAndDeploy = (id, name) => {
+    setAlternativeName(name);
+    console.log(name);
     setIsEditClicked(!isEditClicked);
+    setAlternativeName(name);
     setIsEditId(id);
     console.log(isEditId);
     console.log(isEditClicked);
@@ -130,7 +136,7 @@ function Admin() {
         {
           method: "PATCH",
           headers: {
-            Authorization: `Bearer ${token}`,
+            // Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
           },
           body: JSON.stringify(product),
@@ -153,6 +159,7 @@ function Admin() {
   const [isSortedUp, setIsSortedUp] = useState(false);
   const [isSortedDown, setIsSortedDown] = useState(false);
   const [isEditId, setIsEditId] = useState("");
+
   const [editProductContent, setEditProductContent] = useState("");
 
   const [isPlusProductClicked, setIsPlusProductClicked] = useState(false);
@@ -243,7 +250,7 @@ function Admin() {
                   <button onClick={() => handleDelete(id)}>
                     <TrashIcon></TrashIcon>
                   </button>
-                  <button onClick={() => handleEditAndDeploy(id)}>
+                  <button onClick={() => handleEditAndDeploy(id, name)}>
                     <Pencil></Pencil>
                   </button>
                 </span>

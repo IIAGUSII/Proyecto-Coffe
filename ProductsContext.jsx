@@ -11,6 +11,7 @@ export const UserContextProvider = ({ children }) => {
   const [isApiQuery, setIsApiQuery] = useState([]);
 
   const token = localStorage.getItem("token");
+
   useEffect(() => {
     fetch(urlQuery)
       .then((res) => res.json())
