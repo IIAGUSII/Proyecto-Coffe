@@ -27,6 +27,7 @@
 
 @media (min-width: 768px) {
   .banner-image {
+    margin-top: 4rem;
     display: flex;
     width: 85%;
     height: 320px;
