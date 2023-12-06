@@ -7,10 +7,6 @@ function Register() {
   const [password, setPassword] = useState();
   const [profile, setProfile] = useState();
 
-  // const name = useRef();
-  //const email = useRef();
-  //const password = useRef();
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -29,24 +25,14 @@ function Register() {
 
       if (response.ok) {
         console.log("Registro exitoso");
-        window.location.href = '/login';
+        window.location.href = "/login";
       } else {
-        // Manejar errores en el registro
         console.error("Error en el registro");
       }
     } catch (error) {
       console.error("Error al conectarse con el servidor:", error);
     }
   };
-
-  //const handleSubmit = (e) => {
-  // e.preventDefault();
-  // console.log(name.current.value);
-  // console.log(e.target.email.value);
-  // console.log(e.target.password.value);
-  // console.log(e.target.name.value);
-  //name.current.value = "";
-  //  }
 
   return (
     <>
@@ -58,7 +44,6 @@ function Register() {
                 <div className="form_person">
                   <label className="label_name" htmlFor="name">
                     <input
-                      //ref={name}
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="Ingrese su nombre completo..."
@@ -86,7 +71,6 @@ function Register() {
 
                   <label className="label_email" htmlFor="email">
                     <input
-                      // ref={email}
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Ingrese su email..."
@@ -100,7 +84,6 @@ function Register() {
 
                   <label className="label_password" htmlFor="password">
                     <input
-                      //  ref={password}
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       placeholder="Ingrese su contraseña..."

@@ -22,9 +22,8 @@ function Login() {
 
       if (response.ok) {
         console.log("Login exitoso");
-        window.location.href = '/';
+        window.location.href = "/";
       } else {
-        // Manejar errores en el login
         console.error("Error en el login");
       }
     } catch (error) {

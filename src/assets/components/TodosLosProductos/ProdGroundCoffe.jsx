@@ -29,9 +29,8 @@ function FilterCoffee() {
     }
   };
   useEffect(() => {
-    // Establece el nombre del catálogo después del renderizado
     setCatalogName("cafes molidos");
-  }, []); //
+  }, []);
   return (
     <>
       <main>

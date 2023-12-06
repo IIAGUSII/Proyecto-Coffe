@@ -27,11 +27,9 @@ export default function ProdFood() {
     }
   };
 
-  // Use useEffect para ejecutar la función solo después del renderizado
   useEffect(() => {
-    // Establece el nombre del catálogo después del renderizado
     setCatalogName("Comida");
-  }, []); // El segundo argumento es un array de dependencias, en este caso, está vacío
+  }, []);
 
   return (
     <>

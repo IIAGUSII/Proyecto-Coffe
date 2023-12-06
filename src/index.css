@@ -16,23 +16,19 @@ body {
   background: #1d2127;
 }
 
-/* Estilo para el scroll principal */
 body::-webkit-scrollbar {
-  width: 8px; /* Ancho del scrollbar */
+  width: 8px;
 }
 
-/* Track del scroll */
 body::-webkit-scrollbar-track {
-  background-color: transparent; /* Color transparente del track del scrollbar */
+  background-color: transparent;
 }
 
-/* Handle del scroll */
 body::-webkit-scrollbar-thumb {
-  background-color: #e3caa5; /* Color del handle del scrollbar */
-  border-radius: 6px; /* Bordes redondeados del handle */
+  background-color: #e3caa5;
+  border-radius: 6px;
 }
 
-/* Esquinas del handle del scroll (opcional) */
 body::-webkit-scrollbar-corner {
-  background-color: transparent; /* Color transparente de las esquinas del handle del scrollbar */
+  background-color: transparent;
 }

@@ -17,13 +17,11 @@ function FilterAndOrder({ api, isActive }) {
     setIsSortedDown(false);
   };
 
-  // Función para ordenar los productos de mayor a menor precio
   const sortDescending = () => {
     setIsSortedUp(false);
     setIsSortedDown(true);
   };
 
-  // Función para restablecer el ordenamiento
   const resetAllSort = () => {
     setIsSortedUp(false);
     setIsSortedDown(false);

@@ -35,16 +35,13 @@ function Admin() {
     const { name, value, type, checked } = e.target;
 
     if (type === "checkbox") {
-      // Manejar checkboxes
       setProductForm((prevForm) => {
         if (checked) {
-          // Si el checkbox está marcado, agrega la opción al array
           return {
             ...prevForm,
             catalog: [...prevForm.catalog, name],
           };
         } else {
-          // Si el checkbox está desmarcado, filtra la opción del array
           return {
             ...prevForm,
             catalog: prevForm.catalog.filter((option) => option !== name),
@@ -52,7 +49,6 @@ function Admin() {
         }
       });
     } else {
-      // Manejar otros tipos de input
       setProductForm({
         ...productForm,
         [name]: value,
@@ -64,16 +60,13 @@ function Admin() {
     const { name, value, type, checked } = e.target;
 
     if (type === "checkbox") {
-      // Manejar checkboxes
       setEditForm((prevForm) => {
         if (checked) {
-          // Si el checkbox está marcado, agrega la opción al array
           return {
             ...prevForm,
             catalog: [...prevForm.catalog, name],
           };
         } else {
-          // Si el checkbox está desmarcado, filtra la opción del array
           return {
             ...prevForm,
             catalog: prevForm.catalog.filter((option) => option !== name),
@@ -81,7 +74,6 @@ function Admin() {
         }
       });
     } else {
-      // Manejar otros tipos de input
       setEditForm({
         ...editForm,
         [name]: value,
@@ -136,7 +128,6 @@ function Admin() {
         {
           method: "PATCH",
           headers: {
-            // Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
           },
           body: JSON.stringify(product),
@@ -232,16 +223,6 @@ function Admin() {
               <PlusIcon></PlusIcon>
             </button>
           </div>
-          {/* <article
-            className={!isPlusProductClicked ? "hidden" : "form-plus-container"}
-          >
-            <button
-              onClick={() => setIsPlusProductClicked(!isPlusProductClicked)}
-              className="close-form-icon"
-            >
-              X
-            </button>
-          </article> */}
           <article className="products-container">
             {apiSorted.map(({ name, id }) => {
               return (
@@ -266,15 +247,7 @@ function Admin() {
             ? "hidden"
             : `order-page-product`
         }
-      >
-        {/* <p className="left-order-page-product">&lt;</p>
-        <span className="order-page-selection-item"></span>
-        <span className="order-page-selection-item"></span>
-        <span className="order-page-selection-item"></span>
-        <span className="order-page-selection-item"></span>
-        <span className="order-page-selection-item"></span>
-        <p className="right-order-page-product">&gt;</p> */}
-      </div>
+      ></div>
     </main>
   );
 }
